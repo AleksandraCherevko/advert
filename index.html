@@ -11,8 +11,12 @@
       href="https://fonts.googleapis.com/css2?family=Play:wght@400;700&family=Roboto+Condensed:wght@700&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
+    />
     <link rel="stylesheet" href="./styles.css/styles.css" />
-    <link rel="stylesheet" href="./styles.css/desctop.css">
+    <link rel="stylesheet" href="./styles.css/desctop.css" />
   </head>
   <body>
     <header class="header">
@@ -56,15 +60,15 @@
             >
           </li>
         </ul>
-        <button class="header-button btn" type="submit">Registration</button>
+        <button class="header-button btn" type="_submit">REGISTRATION</button>
       </div>
     </header>
     <main class="main">
       <section class="hero">
         <div class="container">
-          <h1 class="hero-title">find own place</h1>
-          <button class="hero-button btn">Find an ad</button>
-          <button class="hero-button btn">Submit an ad</button>
+          <h1 class="hero-title">FIND YOUR OWN PLACE</h1>
+          <button class="hero-button btn">FIND AN AD</button>
+          <button class="hero-button btn">SUBMIT AN AD</button>
         </div>
       </section>
       <section class="ad-criteria">
@@ -72,206 +76,299 @@
           <h2 class="ad-criteria-title">Ad criteria</h2>
           <ul class="ad-criteria-list">
             <li class="ad-criteria-item">
-              <img class="ad-criteria-image" src="./images/house-desctope-2x.jpg" alt="house image" width="630" height="504"/>
+              <img
+                class="ad-criteria-image"
+                src="./images/house-desctope-2x.jpg"
+                alt="house image"
+                width="630"
+                height="504"
+              />
               <p class="ad-criteria-text">houses</p>
             </li>
             <li class="ad-criteria-item">
-              <img class="ad-criteria-image" src="./images/apartmens-desctope-2x.jpg" alt="studios image" width="630" height="504"/>
+              <img
+                class="ad-criteria-image"
+                src="./images/apartmens-desctope-2x.jpg"
+                alt="studios image"
+                width="630"
+                height="504"
+              />
               <p class="ad-criteria-text">studios</p>
             </li>
             <li class="ad-criteria-item">
-              <img class="ad-criteria-image" src="./images/flat-desctope-2x.jpg" alt="apartments image" width="630" height="504"/>
+              <img
+                class="ad-criteria-image"
+                src="./images/flat-desctope-2x.jpg"
+                alt="apartments image"
+                width="630"
+                height="504"
+              />
               <p class="ad-criteria-text">apartments</p>
             </li>
             <li class="ad-criteria-item">
-              <img class="ad-criteria-image" src="./images/room-desctope-2x.jpg" alt="rooms image" width="630" height="504"/>
+              <img
+                class="ad-criteria-image"
+                src="./images/room-desctope-2x.jpg"
+                alt="rooms image"
+                width="630"
+                height="504"
+              />
               <p class="ad-criteria-text">rooms</p>
             </li>
           </ul>
         </div>
       </section>
-      <section class="france">
-       <div class="container">
-            <h2 class="france-main-title">The most popular countries for travel</h2>
-            <h3 class="country-title">France</h3>
-            <button class="france-title" type="submit">Open all ads</button>
-            <ul class="france-list">
-              <li class="france-item">
-                <img class="hotel-image" src="./images/france-1-desctope-2x.jpg" alt="Nantes photo" />
-                <p class="hotel-name">Nantes</p>
-                <p class="hotel-quantity">10 753 hotels</p>
-              </li>
-              <li class="france-item">
-                <img class="hotel-image" src="./images/france-2-desctope-2x.jpg" alt="Montpellier photo" />
-                <p class="hotel-name">Montpellier</p>
-                <p class="hotel-quantity">11 386 hotels</p>
-              </li>
-              <li class="france-item">
-                <img class="hotel-image" src="./images/france-3-desctope-2x.jpg" alt="Paris foto" />
-                <p class="hotel-name">Paris</p>
-                <p class="hotel-quantity">12 278 hotels</p>
-              </li>
-            </ul>
-       </div>
-      </section>
-      <section class="italy">
+      <section class="all-ads">
         <div class="container">
-            <h3 class="country-title">Italy</h3>
-            <button class="italy-button" type="submit">Open all ads</button>
-            <ul class="italy-list">
-              <li class="italy-item">
-                <img class="hotel-image" src="./images/italy-3-desctope-2x.jpg" alt="Venezia photo" />
-                <p class="hotel-name">Venezia</p>
-                <p class="hotel-quantity">14 120 hotels</p>
-              </li>
-              <li class="italy-item">
-                <img class="hotel-image" src="./images/italy-2-desctope-2x.jpg" alt="Firenze photo" />
-                <p class="hotel-name">Firenze</p>
-                <p class="hotel-quantity">7 988 hotels</p>
-              </li>
-              <li class="italy-item">
-                <img class="hotel-image" src="./images/italy-1-desctope-2x.jpg" alt="Roma photo" />
-                <p class="hotel-name">Roma</p>
-                <p class="hotel-quantity">12 809 hotels</p>
-              </li>
-            </ul>
+          <h2 class="france-main-title">
+            The most popular countries for travel
+          </h2>
+          <h3 class="country-title">France</h3>
+          <!-- <button class="france-title" type="submit">Open all ads</button> -->
+          <ul class="ad-list">
+            <li class="france-item">
+              <img
+                class="hotel-image"
+                src="./images/france-1-desctope-2x.jpg"
+                alt="Nantes photo"
+              />
+              <p class="hotel-name">Nantes</p>
+              <p class="hotel-quantity">10 753 hotels</p>
+            </li>
+            <li class="france-item">
+              <img
+                class="hotel-image"
+                src="./images/france-2-desctope-2x.jpg"
+                alt="Montpellier photo"
+              />
+              <p class="hotel-name">Montpellier</p>
+              <p class="hotel-quantity">11 386 hotels</p>
+            </li>
+            <li class="france-item">
+              <img
+                class="hotel-image"
+                src="./images/france-3-desctope-2x.jpg"
+                alt="Paris foto"
+              />
+              <p class="hotel-name">Paris</p>
+              <p class="hotel-quantity">12 278 hotels</p>
+            </li>
+          </ul>
+
+          <h3 class="country-title">Italy</h3>
+          <button class="italy-button" type="submit">Open all ads</button>
+          <ul class="ad-list">
+            <li class="italy-item">
+              <img
+                class="hotel-image"
+                src="./images/italy-3-desctope-2x.jpg"
+                alt="Venezia photo"
+              />
+              <p class="hotel-name">Venezia</p>
+              <p class="hotel-quantity">14 120 hotels</p>
+            </li>
+            <li class="italy-item">
+              <img
+                class="hotel-image"
+                src="./images/italy-2-desctope-2x.jpg"
+                alt="Firenze photo"
+              />
+              <p class="hotel-name">Firenze</p>
+              <p class="hotel-quantity">7 988 hotels</p>
+            </li>
+            <li class="italy-item">
+              <img
+                class="hotel-image"
+                src="./images/italy-1-desctope-2x.jpg"
+                alt="Roma photo"
+              />
+              <p class="hotel-name">Roma</p>
+              <p class="hotel-quantity">12 809 hotels</p>
+            </li>
+          </ul>
+
+          <h3 class="country-title">Spain</h3>
+          <button class="spain-button" type="submit">Open all ads</button>
+          <ul class="ad-list">
+            <li class="spain-item">
+              <img
+                class="hotel-image"
+                src="./images/spain-1-desctope-2x.jpg"
+                alt="Selvia photo"
+              />
+              <p class="hotel-name">Selvia</p>
+              <p class="hotel-quantity">8 984 hotels</p>
+            </li>
+            <li class="spain-item">
+              <img
+                class="hotel-image"
+                src="./images/spain-2-desctope-2x.jpg"
+                alt="Madrid photo"
+              />
+              <p class="hotel-name">Madrid</p>
+              <p class="hotel-quantity">15 325 hotels</p>
+            </li>
+            <li class="spain-item">
+              <img
+                class="hotel-image"
+                src="./images/spain-3-desctope-2x.jpg"
+                alt="Mallorca photo"
+              />
+              <p class="hotel-name">Mallorca</p>
+              <p class="hotel-quantity">9 825 hotels</p>
+            </li>
+          </ul>
         </div>
       </section>
-      <section class="spain">
-        <div class="container">
-            <ul class="spain-list">
-              <h3 class="country-title">Spain</h3>
-              <button class="spain-button" type="submit">Open all ads</button>
-              <li class="spain-list">
-                <img class="hotel-image" src="./images/spain-1-desctope-2x.jpg" alt="Selvia photo" />
-                <p class="hotel-name">Selvia</p>
-                <p class="hotel-quantity">8 984 hotels</p>
-              </li>
-              <li class="spain-list">
-                <img class="hotel-image" src="./images/spain-2-desctope-2x.jpg" alt="Madrid photo" />
-                <p class="hotel-name">Madrid</p>
-                <p class="hotel-quantity">15 325 hotels</p>
-              </li>
-              <li class="spain-list">
-                <img class="hotel-image" src="./images/spain-3-desctope-2x.jpg" alt="Mallorca photo" />
-                <p class="hotel-name">Mallorca</p>
-                <p class="hotel-quantity">9 825 hotels</p>
-              </li>
-            </ul>
-        </div class="container">
-      </section>
+
       <section class="announcements">
         <div class="container">
-            <h2 class="announcements-title">Next announcements</h2>
-            <button class="announcements-button" type="submit">Open all ads</button>
-            <ul class="announcements-list">
-              <li class="announcements-list">
-                <img class="hotel-image" src="./images/desctope-1-2x.jpg" alt="Vila Gale Lagos Hotel room photo" />
-                <h3 class="hotel-name">Vila Gale Lagos Hotel</h3>
-                <p class="hotel-location">Andresen, Portugal</p>
-                <p class="hotel-rating">7,1</p>
-              </li>
-              <li class="announcements-list">
-                <img class="hotel-image" src="./images/desctope-2-2x.jpg" alt="Cala Moresca room photo" />
-                <h3 class="hotel-name">Cala Moresca</h3>
-                <p class="hotel-location">Via Faro, Italy</p>
-                <p class="hotel-rating">8,6</p>
-              </li>
-              <li class="announcements-list">
-                <img class="hotel-image" src="./images/desctope-3-2x.jpg" alt="Horison Blu room photo" />
-                <h3 class="hotel-name">Horison Blu</h3>
-                <p class="hotel-location">Petrou Karakousi, Greece</p>
-                <p class="hotel-rating">5,9</p>
-              </li>
-              <li class="announcements-list">
-                <img class="hotel-image" src="./images/desctope-4-2x.jpg" alt="Le Galion Hotel room photo" />
-                <h3 class="hotel-name">Le Galion Hotel</h3>
-                <p class="hotel-location">
-                  Saint-Martin-de-Re, France
-                </p>
-                <p class="hotel-rating">8,4</p>
-              </li>
-              <li class="announcements-list">
-                <img class="hotel-image" src="./images/desctope-5-2x.jpg" alt="Molitor Hotel room photo" />
-                <h3 class="hotel-name">Molitor Hotel</h3>
-                <p class="hotel-location">Paris, France</p>
-                <p class="hotel-rating">6,9</p>
-              </li>
-              <li>
-                <img class="hotel-image" src="./images/desctope-6-2x.jpg" alt="Sierra de Meira room photo" />
-                <h3 class="hotel-name">Sierra de Meira</h3>
-                <p class="hotel-location">Madrid, Spain</p>
-                <p class="hotel-rating">7,4</p>
-              </li>
-              <li>
-                <img class="hotel-image" src="./images/desctope-7-2x.jpg" alt="Petit Hotel room photo" />
-                <h3 class="hotel-name">Petit Hotel</h3>
-                <p class="hotel-location">Madrid, Spain</p>
-                <p class="hotel-rating">7,2</p>
-              </li>
-              <li class="announcements-list">
-                <img class="hotel-image" src="./images/desctope-8-2x.jpg" alt="Gran Hotel room photo" />
-                <h3 class="hotel-name">Gran Hotel</h3>
-                <p class="hotel-location">Alicante, Spain</p>
-                <p class="hotel-rating">8,9</p>
-              </li>
-              <li class="announcements-list">
-                <img class="hotel-image" src="./images/desctope-9-2x.jpg" alt="KViHotel room photo" />
-                <h3 class="hotel-name">KViHotel</h3>
-                <p class="hotel-location">Madrid, Spain</p>
-                <p class="hotel-rating">7,2</p>
-              </li>
-            </ul>
+          <h2 class="announcements-title">Next announcements</h2>
+          <!-- <button class="announcements-button" type="submit">
+            Open all ads
+          </button> -->
+          <ul class="announcements-list">
+            <li class="announcements-list">
+              <img
+                class="hotel-image"
+                src="./images/desctope-1-2x.jpg"
+                alt="Vila Gale Lagos Hotel room photo"
+              />
+              <h3 class="hotel-name">Vila Gale Lagos Hotel</h3>
+              <p class="hotel-location">Andresen, Portugal</p>
+              <p class="hotel-rating">7,1</p>
+            </li>
+            <li class="announcements-list">
+              <img
+                class="hotel-image"
+                src="./images/desctope-2-2x.jpg"
+                alt="Cala Moresca room photo"
+              />
+              <h3 class="hotel-name">Cala Moresca</h3>
+              <p class="hotel-location">Via Faro, Italy</p>
+              <p class="hotel-rating">8,6</p>
+            </li>
+            <li class="announcements-list">
+              <img
+                class="hotel-image"
+                src="./images/desctope-3-2x.jpg"
+                alt="Horison Blu room photo"
+              />
+              <h3 class="hotel-name">Horison Blu</h3>
+              <p class="hotel-location">Petrou Karakousi, Greece</p>
+              <p class="hotel-rating">5,9</p>
+            </li>
+            <li class="announcements-list">
+              <img
+                class="hotel-image"
+                src="./images/desctope-4-2x.jpg"
+                alt="Le Galion Hotel room photo"
+              />
+              <h3 class="hotel-name">Le Galion Hotel</h3>
+              <p class="hotel-location">Saint-Martin-de-Re, France</p>
+              <p class="hotel-rating">8,4</p>
+            </li>
+            <li class="announcements-list">
+              <img
+                class="hotel-image"
+                src="./images/desctope-5-2x.jpg"
+                alt="Molitor Hotel room photo"
+              />
+              <h3 class="hotel-name">Molitor Hotel</h3>
+              <p class="hotel-location">Paris, France</p>
+              <p class="hotel-rating">6,9</p>
+            </li>
+            <li>
+              <img
+                class="hotel-image"
+                src="./images/desctope-6-2x.jpg"
+                alt="Sierra de Meira room photo"
+              />
+              <h3 class="hotel-name">Sierra de Meira</h3>
+              <p class="hotel-location">Madrid, Spain</p>
+              <p class="hotel-rating">7,4</p>
+            </li>
+            <li>
+              <img
+                class="hotel-image"
+                src="./images/desctope-7-2x.jpg"
+                alt="Petit Hotel room photo"
+              />
+              <h3 class="hotel-name">Petit Hotel</h3>
+              <p class="hotel-location">Madrid, Spain</p>
+              <p class="hotel-rating">7,2</p>
+            </li>
+            <li class="announcements-list">
+              <img
+                class="hotel-image"
+                src="./images/desctope-8-2x.jpg"
+                alt="Gran Hotel room photo"
+              />
+              <h3 class="hotel-name">Gran Hotel</h3>
+              <p class="hotel-location">Alicante, Spain</p>
+              <p class="hotel-rating">8,9</p>
+            </li>
+            <li class="announcements-list">
+              <img
+                class="hotel-image"
+                src="./images/desctope-9-2x.jpg"
+                alt="KViHotel room photo"
+              />
+              <h3 class="hotel-name">KViHotel</h3>
+              <p class="hotel-location">Madrid, Spain</p>
+              <p class="hotel-rating">7,2</p>
+            </li>
+          </ul>
         </div>
       </section>
     </main>
     <footer class="footer">
       <div class="container">
-          <ul class="footer-list">
-            <li class="footer-item">Main</li>
-            <li class="footer-item">Favourites</li>
-            <li class="footer-item">User</li>
-            <li class="footer-item">User account</li>
-          </ul>
-          <ul class="footer-social-media">
-            <li class="footer-soc-media-list">
-              <a
-                class="footer-soc-media-link"
-                href=""
-                targer="_blank"
-                rel="noopener noreferrer nofollow"
-                >FaceBook</a
-              >
-            </li>
-            <li class="footer-soc-media-list">
-              <a
-                class="footer-soc-media-link"
-                href=""
-                targer="_blank"
-                rel="noopener noreferrer nofollow"
-                >YouTube</a
-              >
-            </li>
-            <li class="footer-soc-media-list">
-              <a
-                class="footer-soc-media-link"
-                href=""
-                targer="_blank"
-                rel="noopener noreferrer nofollow"
-                >Instagram</a
-              >
-            </li>
-            <li class="footer-soc-media-list">
-              <a
-                class="footer-soc-media-link"
-                href=""
-                targer="_blank"
-                rel="noopener noreferrer nofollow"
-                >X</a
-              >
-            </li>
-          </ul>
-          <p class="copyright"> &copy; All rights reserved</p>
+        <ul class="footer-list">
+          <li class="footer-item">Main</li>
+          <li class="footer-item">Favourites</li>
+          <li class="footer-item">User</li>
+          <li class="footer-item">User account</li>
+        </ul>
+        <ul class="footer-social-media">
+          <li class="footer-soc-media-list">
+            <a
+              class="footer-soc-media-link"
+              href=""
+              targer="_blank"
+              rel="noopener noreferrer nofollow"
+              >FaceBook</a
+            >
+          </li>
+          <li class="footer-soc-media-list">
+            <a
+              class="footer-soc-media-link"
+              href=""
+              targer="_blank"
+              rel="noopener noreferrer nofollow"
+              >YouTube</a
+            >
+          </li>
+          <li class="footer-soc-media-list">
+            <a
+              class="footer-soc-media-link"
+              href=""
+              targer="_blank"
+              rel="noopener noreferrer nofollow"
+              >Instagram</a
+            >
+          </li>
+          <li class="footer-soc-media-list">
+            <a
+              class="footer-soc-media-link"
+              href=""
+              targer="_blank"
+              rel="noopener noreferrer nofollow"
+              >X</a
+            >
+          </li>
+        </ul>
+        <p class="copyright">&copy; All rights reserved</p>
       </div>
     </footer>
   </body>

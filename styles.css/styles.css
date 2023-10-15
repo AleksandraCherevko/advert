@@ -7,6 +7,7 @@ body {
   font-family: 'Play', sans-serif;
   background-color: #ebf8ff;
   color: var(--main-color);
+  margin: 0 auto;
 }
 
 ul,
@@ -20,10 +21,6 @@ li {
 a {
   color: currentColor;
   text-decoration: none;
-}
-
-button {
-  cursor: pointer;
 }
 
 img {
@@ -41,9 +38,10 @@ img {
 
 .container {
   text-align: center;
-  max-width: 100%;
+  width: 1200px;
   margin: 0 auto;
   padding: 0 15px;
+  outline: 2px solid tomato;
 }
 
 h1,
@@ -57,13 +55,17 @@ p {
 }
 
 .btn {
+  cursor: pointer;
   color: #f8f7f7;
   font-size: 20px;
   font-weight: 700;
   line-height: 1;
   letter-spacing: 0em;
   background-color: transparent;
-  border: 1px solid var(--accent-color);
+  border: 3px solid var(--accent-color);
+  padding: 12px 28px;
+  display: inline-block;
+  text-align: center;
 }
 
 .btn:hover,
@@ -72,6 +74,7 @@ p {
 }
 
 .hotel-image {
+  margin-bottom: 24px;
   width: 413px;
   height: 300px;
 }
@@ -81,6 +84,14 @@ p {
   background-color: #cfe7f5;
 }
 
+.header {
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+.header-list {
+  display: flex;
+  gap: 60px;
+}
 .header-link {
   color: var(--accent-color);
   font-size: 20px;
@@ -89,11 +100,18 @@ p {
   font-weight: 700;
 }
 
+.header-button {
+  min-width: 209px;
+}
+
 /* MAIN */
 .hero {
+  padding-top: 100px;
+  padding-bottom: 533px;
   background-image: url(../images/hero-desctope-2x.jpg);
 }
 .hero-title {
+  margin-bottom: 100px;
   font-family: Impact;
   font-size: 80px;
   font-weight: 400;
@@ -101,10 +119,20 @@ p {
   letter-spacing: 0em;
   color: var(--accent-color);
 }
-
+.hero-button {
+  min-width: 280px;
+}
 /* Ads */
 
+.ad-list {
+  display: flex;
+}
+.ad-criteria {
+  padding-top: 32px;
+  padding-bottom: 46px;
+}
 .ad-criteria-title {
+  margin-bottom: 32px;
   font-size: 40px;
   font-weight: 700;
   line-height: 1;
@@ -118,7 +146,21 @@ p {
   letter-spacing: 0em;
 }
 
+.ad-criteria-list {
+  display: flex;
+}
+
+.ad-criteria-image {
+  margin-bottom: 28px;
+}
+
+/* all ads */
+.all-ads {
+  padding-top: 32px;
+  padding-bottom: 92px;
+}
 .france-main-title {
+  margin-bottom: 56px;
   font-size: 40px;
   font-weight: 700;
   line-height: 1;
@@ -126,6 +168,7 @@ p {
 }
 
 .country-title {
+  margin-bottom: 24px;
   font-family: Play;
   font-size: 32px;
   font-weight: 700;
@@ -140,9 +183,14 @@ p {
   line-height: 1.2;
   letter-spacing: 0em;
 }
-
+.hotel-name {
+  margin-bottom: 8px;
+}
 /*ANNOUCEMENTS */
-
+.announcements {
+  padding-top: 32px;
+  padding-bottom: 120px;
+}
 .announcements-title {
   font-size: 40px;
   font-weight: 700;
@@ -151,6 +199,7 @@ p {
 }
 
 .hotel-location {
+  margin-bottom: 8px;
   font-size: 16px;
   font-weight: 700;
   line-height: 1;
@@ -166,6 +215,9 @@ p {
   color: var(--accent-color);
 }
 
+.announcements-list {
+  display: flex;
+}
 /* FOOTER */
 
 .footer-item {
@@ -187,6 +239,7 @@ p {
 /* SECOND PAGE */
 
 .economy-title {
+  margin-bottom: 32px;
   font-size: 32px;
   font-weight: 400;
   line-height: 1;
@@ -207,4 +260,16 @@ p {
 .more-ads-button:focus {
   background-color: b0a2a2;
   color: white;
+}
+
+.economy-list {
+  display: flex;
+}
+
+.spec-offer-list {
+  display: flex;
+}
+
+.popular-list {
+  display: flex;
 }
