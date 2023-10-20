@@ -19,7 +19,10 @@
   </head>
   <body>
     <header class="header">
-      <div class="container">
+      <div class="container header-container">
+        <svg class="" width="87" height="85">
+          <use href="./symbol-defs.svg#icon-Logo"></use>
+        </svg>
         <ul class="header-list">
           <li class="header-item">
             <a
@@ -33,22 +36,26 @@
           <li class="header-item">
             <a
               class="header-link"
-              href="./second-page.html"
+              href="./second.html"
               targer="_blank"
               rel="noopener noreferrer nofollow"
               >All adverts</a
             >
           </li>
           <li class="header-item">
-            <a
-              class="header-link"
-              href=""
-              targer="_blank"
-              rel="noopener noreferrer nofollow"
-              >Favourites</a
-            >
+            <a href="">
+              <svg class="header-icon" width="24" height="24">
+                <use href="symbol-defs.svg#icon-vector"></use>
+              </svg>
+            </a>
           </li>
-          <li class="header-item"><a class="header-link" href="">User</a></li>
+          <li class="header-item">
+            <a href="">
+              <svg class="header-icon" width="24" height="24">
+                <use href="symbol-defs.svg#icon-user"></use>
+              </svg>
+            </a>
+          </li>
           <li class="header-item">
             <a
               class="header-link"
@@ -59,7 +66,7 @@
             >
           </li>
         </ul>
-        <button class="header-button btn" type="submit">REGISTRATION</button>
+        <button class="header-button btn" type="_submit">registration</button>
       </div>
     </header>
     <main>
@@ -70,17 +77,24 @@
       </section>
       <section class="economy">
         <div class="container">
-          <h3 class="economy-title">Super economy</h3>
-          <ul class="economy-list">
+          <div class="position">
+            <h3 class="country-title">Super economy</h3>
+            <button class="all-ads-button btn" type="submit">
+              Open all ads
+            </button>
+          </div>
+          <ul class="ad-list">
             <li class="economy-item">
               <img
                 class="hotel-image"
                 src="./images/second-page-desctope-1-2x.jpg"
                 alt="Silver Hotel image"
               />
-              <p class="hotel-name">Silver Hotel</p>
-              <p class="hotel-location">Petrou Karakousi, Greece</p>
-              <p class="hotel-rating">7,4</p>
+              <div class="card-text">
+                <p class="hotel-name">Silver Hotel</p>
+                <p class="hotel-location">Petrou Karakousi, Greece</p>
+                <p class="hotel-rating">7,4</p>
+              </div>
             </li>
             <li class="economy-item">
               <img
@@ -88,9 +102,11 @@
                 src="./images/second-page-desctope-2-2x.jpg"
                 alt=""
               />
-              <p class="hotel-name">Erzsébet</p>
-              <p class="hotel-location">Alicante, Spain</p>
-              <p class="hotel-rating">6,2</p>
+              <div class="card-text">
+                <p class="hotel-name">Erzsébet</p>
+                <p class="hotel-location">Alicante, Spain</p>
+                <p class="hotel-rating">6,2</p>
+              </div>
             </li>
             <li class="economy-item">
               <img
@@ -98,26 +114,35 @@
                 src="./images/second-page-desctope-3-2x.jpg"
                 alt="KViHotel image"
               />
-              <p class="hotel-name">KViHotel</p>
-              <p class="hotel-location">Madrid, Spain</p>
-              <p class="hotel-rating">7,2</p>
+              <div class="card-text">
+                <p class="hotel-name">KViHotel</p>
+                <p class="hotel-location">Madrid, Spain</p>
+                <p class="hotel-rating">7,2</p>
+              </div>
             </li>
           </ul>
         </div>
       </section>
       <section class="spec-offer">
         <div class="container">
-          <h3 class="economy-title">Special offer</h3>
-          <ul class="spec-offer-list">
+          <div class="position">
+            <h3 class="country-title">Special offer</h3>
+            <button class="all-ads-button btn" type="submit">
+              Open all ads
+            </button>
+          </div>
+          <ul class="ad-list">
             <li class="spec-offer-item">
               <img
                 class="hotel-image"
                 src="./images/second-page-desctope-4-2x.jpg"
                 alt="Sierra de Meira image"
               />
-              <p class="hotel-name">Sierra de Meira</p>
-              <p class="hotel-location">Madrid, Spain</p>
-              <p class="hotel-rating">7,4</p>
+              <div class="card-text">
+                <p class="hotel-name">Sierra de Meira</p>
+                <p class="hotel-location">Madrid, Spain</p>
+                <p class="hotel-rating">7,4</p>
+              </div>
             </li>
             <li class="hotel-item">
               <img
@@ -125,9 +150,11 @@
                 src="./images/second-page-desctope-5-2x.jpg"
                 alt="Molitor Hotel image"
               />
-              <p class="hotel-name">Molitor Hotel</p>
-              <p class="hotel-location">Paris, France</p>
-              <p class="hotelrating">6,9</p>
+              <div class="card-text">
+                <p class="hotel-name">Molitor Hotel</p>
+                <p class="hotel-location">Paris, France</p>
+                <p class="hotelrating">6,9</p>
+              </div>
             </li>
             <li class="spec-offer-item">
               <img
@@ -135,139 +162,170 @@
                 src="./images/second-page-desctope-6-2x.jpg"
                 alt="Le Galion Hotel imaga"
               />
-              <p class="hotel-name">Le Galion Hotel</p>
-              <p class="hotel-location">Saint-Martin-de-Re, France</p>
-              <p class="hotel-rating">8,4</p>
+              <div class="card-text">
+                <p class="hotel-name">Le Galion Hotel</p>
+                <p class="hotel-location">Saint-Martin-de-Re, France</p>
+                <p class="hotel-rating">8,4</p>
+              </div>
             </li>
           </ul>
         </div>
       </section>
       <section class="popular">
         <div class="container">
-          <h3 class="economy-title">Popular ads</h3>
-          <ul class="popular-list">
-            <li class="popular-item">
+          <div class="position">
+            <h3 class="country-title">Popular ads</h3>
+            <button class="all-ads-button btn" type="submit">
+              Open all ads
+            </button>
+          </div>
+          <ul class="announcements-list">
+            <li class="announcements-item">
               <img
                 class="hotel-image"
                 src="./images/second-page-desctope-7-2x.jpg"
                 alt="ENA Chalets image"
               />
-              <p class="hotel-name">ENA Chalets</p>
-              <p class="hotel-location">Lido di Spina, Italy</p>
-              <p class="hotel-rating">7,2</p>
+              <div class="card-text">
+                <p class="hotel-name">ENA Chalets</p>
+                <p class="hotel-location">Lido di Spina, Italy</p>
+                <p class="hotel-rating">7,2</p>
+              </div>
             </li>
-            <li class="popular-item">
+            <li class="announcements-item">
               <img
                 class="hotel-image"
                 src="./images/second-page-desctope-8-2x.jpg"
                 alt="AlMolo5 image"
               />
-              <p class="hotel-name">AlMolo5</p>
-              <p class="hotel-location">Alicante, Spain</p>
-              <p class="hotel-rating">6,4</p>
+              <div class="card-text">
+                <p class="hotel-name">AlMolo5</p>
+                <p class="hotel-location">Alicante, Spain</p>
+                <p class="hotel-rating">6,4</p>
+              </div>
             </li>
-            <li class="popular-item">
+            <li class="announcements-item">
               <img
                 class="hotel-image"
                 src="./images/second-page-desctope-9-2x.jpg"
                 alt="Just be & image"
               />
-              <p class="hotel-name">Just be & b</p>
-              <p class="hotel-location">Petrou Karakousi, Greece</p>
-              <p class="hotel-rating">7,8</p>
+              <div class="card-text">
+                <p class="hotel-name">Just be & b</p>
+                <p class="hotel-location">Petrou Karakousi, Greece</p>
+                <p class="hotel-rating">7,8</p>
+              </div>
             </li>
-            <li class="popular-item">
+            <li class="announcements-item">
               <img
                 class="hotel-image"
                 src="./images/second-page-desctope-10-2x.jpg"
                 alt="HOMES image"
               />
-              <p class="hotel-name">HOMES</p>
-              <p class="hotel-location">Erzhebetvaros, Budapest</p>
-              <p class="hotel-rating">9,2</p>
+              <div class="card-text">
+                <p class="hotel-name">HOMES</p>
+                <p class="hotel-location">Erzhebetvaros, Budapest</p>
+                <p class="hotel-rating">9,2</p>
+              </div>
             </li>
-            <li class="popular-item">
+            <li class="announcements-item">
               <img
                 class="hotel-image"
                 src="./images/second-page-desctope-11-2x.jpg"
                 alt="Budget Apartment by Hi5 image"
               />
-              <p class="hotel-name">Budget Apartment by Hi5</p>
-              <p class="hotel-location">Saint-Martin-de-Re, France</p>
-              <p class="hotel-rating">6,5</p>
+              <div class="card-text">
+                <p class="hotel-name">Budget Apartment by Hi5</p>
+                <p class="hotel-location">Saint-Martin-de-Re, France</p>
+                <p class="hotel-rating">6,5</p>
+              </div>
             </li>
-            <li class="popular-item">
+            <li class="announcements-item">
               <img
                 class="hotel-image"
                 src="./images/second-page-desctope-12-2x.jpg"
                 alt="East Station DeLuxe image"
               />
-              <p class="hotel-name">East Station DeLuxe</p>
-              <p class="hotel-location">Leopoldstadt, Vienna</p>
-              <p class="hotel-rating">5,4</p>
+              <div class="card-text">
+                <p class="hotel-name">East Station DeLuxe</p>
+                <p class="hotel-location">Leopoldstadt, Vienna</p>
+                <p class="hotel-rating">5,4</p>
+              </div>
             </li>
-            <li class="popular-item">
+            <li class="announcements-item">
               <img
                 class="hotel-image"
                 src="./images/second-page-desctope-13-2x.jpg"
                 alt="Downtown Homes Relax image"
               />
-              <p class="hotel-name">Downtown Homes Relax</p>
-              <p class="hotel-location">Fatih, Istanbul</p>
-              <p class="hotel-rating">6,1</p>
+              <div class="card-text">
+                <p class="hotel-name">Downtown Homes Relax</p>
+                <p class="hotel-location">Fatih, Istanbul</p>
+                <p class="hotel-rating">6,1</p>
+              </div>
             </li>
-            <li class="popular-item">
+            <li class="announcements-item">
               <img
                 class="hotel-image"
                 src="./images/second-page-desctope-14-2x.jpg"
                 alt="Pair of Kings image"
               />
-              <p class="hotel-name">Pair of Kings</p>
-              <p class="hotel-location">Podgurze, Krakow</p>
-              <p class="hotel-rating">9,2</p>
+              <div class="card-text">
+                <p class="hotel-name">Pair of Kings</p>
+                <p class="hotel-location">Podgurze, Krakow</p>
+                <p class="hotel-rating">9,2</p>
+              </div>
             </li>
-            <li class="popular-item">
+            <li class="announcements-item">
               <img
                 class="hotel-image"
                 src="./images/second-page-desctope-15-2x.jpg"
                 alt="Design Apartment In Party image"
               />
-              <p class="hotel-name">Design Apartment In Party</p>
-              <p class="hotel-location">Rudolfsheim-Fünfhaus, Vienna</p>
-              <p class="hotel-rating">6,7</p>
+              <div class="card-text">
+                <p class="hotel-name">Design Apartment In Party</p>
+                <p class="hotel-location">Rudolfsheim-Fünfhaus, Vienna</p>
+                <p class="hotel-rating">6,7</p>
+              </div>
             </li>
-            <li class="popular-item">
+            <li class="announcements-item">
               <img
                 class="hotel-image"
                 src="./images/second-page-desctope-16-2x.jpg"
                 alt="Adagio Downtown MiniHotel image"
               />
-              <p class="hotel-name">Adagio Downtown MiniHotel</p>
-              <p class="hotel-location">Baku,Azerbaijan</p>
-              <p class="hotel-rating">8,8</p>
+              <div class="card-text">
+                <p class="hotel-name">Adagio Downtown MiniHotel</p>
+                <p class="hotel-location">Baku,Azerbaijan</p>
+                <p class="hotel-rating">8,8</p>
+              </div>
             </li>
-            <li class="popular-item">
+            <li class="announcements-item">
               <img
                 class="hotel-image"
                 src="./images/second-page-desctope-17-2x.jpg"
                 alt="Benczur Hotel image"
               />
-              <p class="hotel-name">Benczur Hotel</p>
-              <p class="hotel-location">Krakow, Poland</p>
-              <p class="hotel-rating">5,5</p>
+              <div class="card-text">
+                <p class="hotel-name">Benczur Hotel</p>
+                <p class="hotel-location">Krakow, Poland</p>
+                <p class="hotel-rating">5,5</p>
+              </div>
             </li>
-            <li class="popular-item">
+            <li class="announcements-item">
               <img
                 class="hotel-image"
                 src="./images/second-page-desctope-18-2x.jpg"
                 alt="Easy Star Hotel image"
               />
-              <p class="hotel-name">Easy Star Hotel</p>
-              <p class="hotel-location">Andresen, Portugal</p>
-              <p class="hotel-rating">4,8</p>
+              <div class="card-text">
+                <p class="hotel-name">Easy Star Hotel</p>
+                <p class="hotel-location">Andresen, Portugal</p>
+                <p class="hotel-rating">4,8</p>
+              </div>
             </li>
           </ul>
-          <button class="more-ads-button">Show more ads</button>
+          <button class="all-ads-button btn">Show more ads</button>
         </div>
       </section>
     </main>

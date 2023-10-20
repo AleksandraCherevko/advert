@@ -1,0 +1,29 @@
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+  .container {
+    width: 834px;
+  }
+
+  .header > .container {
+    max-width: 834px;
+    width: 100%;
+  }
+
+  .header {
+    padding-top: 14px;
+    padding-bottom: 12px;
+  }
+  .header-container {
+    display: flex;
+    align-items: center;
+  }
+
+  .header-list {
+    margin-left: 38px;
+    display: flex;
+    gap: 20px;
+  }
+  .header-button {
+    min-width: 170px;
+    margin-left: auto;
+  }
+}

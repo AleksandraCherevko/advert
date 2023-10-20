@@ -1,4 +1,29 @@
 @media screen and (min-width: 1200px) {
-  width: 100%;
-  max-width: 1440px;
+  .container {
+    width: 1400px;
+  }
+
+  .header > .container {
+    max-width: 1200px;
+    width: 100%;
+  }
+
+  .header-container {
+    display: flex;
+    align-items: center;
+  }
+  .header {
+    padding-top: 12px;
+    padding-bottom: 12px;
+  }
+
+  .header-list {
+    margin-left: 155px;
+    display: flex;
+    gap: 60px;
+  }
+  .header-button {
+    min-width: 209px;
+    margin-left: auto;
+  }
 }

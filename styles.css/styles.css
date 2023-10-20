@@ -38,7 +38,7 @@ img {
 
 .container {
   text-align: center;
-  width: 1200px;
+  width: 390px;
   margin: 0 auto;
   padding: 0 15px;
   outline: 2px solid tomato;
@@ -66,6 +66,7 @@ p {
   padding: 12px 28px;
   display: inline-block;
   text-align: center;
+  text-transform: uppercase;
 }
 
 .btn:hover,
@@ -78,20 +79,36 @@ p {
   width: 413px;
   height: 300px;
 }
-/* HEADER */
 .header,
 .footer {
   background-color: #cfe7f5;
 }
 
-.header {
-  padding-top: 12px;
-  padding-bottom: 12px;
+.header-icon {
+  fill: #266294;
 }
-.header-list {
-  display: flex;
-  gap: 60px;
+
+.soc-icons {
+  stroke: var(--accent-color);
+  fill: transparent;
 }
+.header-link:hover,
+.header-link:focus {
+  color: white;
+}
+
+.header-icon:hover,
+.header-icon:focus {
+  fill: white;
+}
+
+/* HEADER */
+
+.header > .container {
+  max-width: 390px;
+  width: 100%;
+}
+
 .header-link {
   color: var(--accent-color);
   font-size: 20px;
@@ -100,15 +117,42 @@ p {
   font-weight: 700;
 }
 
-.header-button {
-  min-width: 209px;
+.header {
+  padding-top: 12px;
+  padding-bottom: 12px;
 }
 
+.header-container {
+  display: flex;
+  align-items: center;
+}
+
+.header-list {
+  display: none;
+}
+
+.header-button {
+  min-width: 139px;
+  margin-left: auto;
+}
+/* 
+
+
+
+
+
+.header-button {
+  min-width: 209px;
+  margin-left: auto;
+} */
+
 /* MAIN */
-.hero {
+/* .hero {
   padding-top: 100px;
   padding-bottom: 533px;
+  background-color: gray;
   background-image: url(../images/hero-desctope-2x.jpg);
+  background-size: cover;
 }
 .hero-title {
   margin-bottom: 100px;
@@ -118,14 +162,22 @@ p {
   line-height: 1;
   letter-spacing: 0em;
   color: var(--accent-color);
+  text-transform: uppercase;
+}
+.button-container {
+  display: flex;
+  justify-content: space-evenly;
 }
 .hero-button {
   min-width: 280px;
-}
+} */
 /* Ads */
-
-.ad-list {
+/* .position {
+  margin-top: 32px;
+  margin-bottom: 32px;
   display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
 }
 .ad-criteria {
   padding-top: 32px;
@@ -148,32 +200,52 @@ p {
 
 .ad-criteria-list {
   display: flex;
+  flex-wrap: wrap;
+  column-gap: 20px;
+  row-gap: 36px;
 }
 
+.ad-criteria-item {
+  flex-basis: calc((100% - 24px) / 2);
+}
 .ad-criteria-image {
   margin-bottom: 28px;
-}
+} */
 
 /* all ads */
-.all-ads {
+/* .all-ads {
   padding-top: 32px;
-  padding-bottom: 92px;
+  padding-bottom: 48px;
 }
 .france-main-title {
-  margin-bottom: 56px;
   font-size: 40px;
   font-weight: 700;
   line-height: 1;
   letter-spacing: 0em;
 }
+.all-ads-button {
+  color: var(--accent-color);
+  border-bottom: 2px solid var(--accent-color);
+  border-top: transparent;
+  border-left: transparent;
+  border-right: transparent;
+}
 
+.all-ads-button:hover,
+.all-ads-button:focus {
+  color: white;
+}
 .country-title {
-  margin-bottom: 24px;
   font-family: Play;
   font-size: 32px;
   font-weight: 700;
   line-height: 1;
   letter-spacing: 0em;
+  display: inline-block;
+}
+.country-title-button {
+  display: flex;
+  align-items: center;
 }
 
 .hotel-name,
@@ -183,11 +255,18 @@ p {
   line-height: 1.2;
   letter-spacing: 0em;
 }
-.hotel-name {
-  margin-bottom: 8px;
+
+.ad-list {
+  display: flex;
+  column-gap: 20px;
+  row-gap: 32px;
 }
+.ad-item {
+  flex-basis: calc((100% - 40px) / 3);
+} */
+
 /*ANNOUCEMENTS */
-.announcements {
+/* .announcements {
   padding-top: 32px;
   padding-bottom: 120px;
 }
@@ -199,7 +278,6 @@ p {
 }
 
 .hotel-location {
-  margin-bottom: 8px;
   font-size: 16px;
   font-weight: 700;
   line-height: 1;
@@ -217,9 +295,38 @@ p {
 
 .announcements-list {
   display: flex;
+  flex-wrap: wrap;
+  column-gap: 20px;
+  row-gap: 50px;
 }
-/* FOOTER */
 
+.announcements-item {
+  flex-basis: calc((100% - 40px) / 3);
+}
+.card-text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+} */
+/* FOOTER */
+/* 
+.footer {
+  padding-top: 32px;
+  padding-bottom: 93px;
+}
+.footer-list {
+  display: flex;
+  gap: 64px;
+  justify-content: flex-end;
+}
+
+.footer-social-media {
+  margin-top: 35px;
+  display: flex;
+  gap: 28px;
+  justify-content: flex-end;
+}
 .footer-item {
   font-size: 20px;
   font-weight: 700;
@@ -234,11 +341,11 @@ p {
   line-height: 1.3;
   letter-spacing: 0em;
   color: var(--accent-color);
-}
+} */
 
 /* SECOND PAGE */
 
-.economy-title {
+/* .economy-title {
   margin-bottom: 32px;
   font-size: 32px;
   font-weight: 400;
@@ -265,7 +372,9 @@ p {
 .economy-list {
   display: flex;
 }
-
+.economy-item {
+  flex-basis: calc((100% - 40px) / 3);
+}
 .spec-offer-list {
   display: flex;
 }
@@ -273,3 +382,12 @@ p {
 .popular-list {
   display: flex;
 }
+
+.header-icon {
+  fill: #266294;
+}
+
+.soc-icons {
+  stroke: var(--accent-color);
+  fill: transparent;
+} */

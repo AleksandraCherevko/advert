@@ -16,11 +16,16 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
     />
     <link rel="stylesheet" href="./styles.css/styles.css" />
-    <link rel="stylesheet" href="./styles.css/desctop.css" />
+    <link rel="stylesheet" href="./styles.css/mobile.css" />
+    <link rel="stylesheet" href="./styles.css/tablet.css" />
+    <link rel="stylesheet" href="./styles.css/desctope.css" />
   </head>
   <body>
     <header class="header">
-      <div class="container">
+      <div class="container header-container">
+        <svg class="" width="87" height="85">
+          <use href="./symbol-defs.svg#icon-Logo"></use>
+        </svg>
         <ul class="header-list">
           <li class="header-item">
             <a
@@ -41,15 +46,19 @@
             >
           </li>
           <li class="header-item">
-            <a
-              class="header-link"
-              href=""
-              targer="_blank"
-              rel="noopener noreferrer nofollow"
-              >Favourites</a
-            >
+            <a href="">
+              <svg class="header-icon" width="24" height="24">
+                <use href="symbol-defs.svg#icon-vector"></use>
+              </svg>
+            </a>
           </li>
-          <li class="header-item"><a class="header-link" href="">User</a></li>
+          <li class="header-item">
+            <a href="">
+              <svg class="header-icon" width="24" height="24">
+                <use href="symbol-defs.svg#icon-user"></use>
+              </svg>
+            </a>
+          </li>
           <li class="header-item">
             <a
               class="header-link"
@@ -60,15 +69,17 @@
             >
           </li>
         </ul>
-        <button class="header-button btn" type="_submit">REGISTRATION</button>
+        <button class="header-button btn" type="_submit">registration</button>
       </div>
     </header>
-    <main class="main">
+    <!-- <main class="main">
       <section class="hero">
         <div class="container">
-          <h1 class="hero-title">FIND YOUR OWN PLACE</h1>
-          <button class="hero-button btn">FIND AN AD</button>
-          <button class="hero-button btn">SUBMIT AN AD</button>
+          <h1 class="hero-title">find your own place</h1>
+          <div class="button-container">
+            <button class="hero-button btn">find an ad</button>
+            <button class="hero-button btn">submit an ad</button>
+          </div>
         </div>
       </section>
       <section class="ad-criteria">
@@ -80,8 +91,6 @@
                 class="ad-criteria-image"
                 src="./images/house-desctope-2x.jpg"
                 alt="house image"
-                width="630"
-                height="504"
               />
               <p class="ad-criteria-text">houses</p>
             </li>
@@ -90,8 +99,6 @@
                 class="ad-criteria-image"
                 src="./images/apartmens-desctope-2x.jpg"
                 alt="studios image"
-                width="630"
-                height="504"
               />
               <p class="ad-criteria-text">studios</p>
             </li>
@@ -100,8 +107,6 @@
                 class="ad-criteria-image"
                 src="./images/flat-desctope-2x.jpg"
                 alt="apartments image"
-                width="630"
-                height="504"
               />
               <p class="ad-criteria-text">apartments</p>
             </li>
@@ -110,8 +115,6 @@
                 class="ad-criteria-image"
                 src="./images/room-desctope-2x.jpg"
                 alt="rooms image"
-                width="630"
-                height="504"
               />
               <p class="ad-criteria-text">rooms</p>
             </li>
@@ -123,99 +126,130 @@
           <h2 class="france-main-title">
             The most popular countries for travel
           </h2>
-          <h3 class="country-title">France</h3>
-          <!-- <button class="france-title" type="submit">Open all ads</button> -->
+          <div class="position">
+            <h3 class="country-title">France</h3>
+            <button class="all-ads-button btn" type="submit">
+              Open all ads
+            </button>
+          </div>
           <ul class="ad-list">
-            <li class="france-item">
+            <li class="ad-item">
               <img
                 class="hotel-image"
                 src="./images/france-1-desctope-2x.jpg"
                 alt="Nantes photo"
               />
-              <p class="hotel-name">Nantes</p>
-              <p class="hotel-quantity">10 753 hotels</p>
+              <div class="card-text">
+                <p class="hotel-name">Nantes</p>
+                <p class="hotel-quantity">10 753 hotels</p>
+              </div>
             </li>
-            <li class="france-item">
+            <li class="ad-item">
               <img
                 class="hotel-image"
                 src="./images/france-2-desctope-2x.jpg"
                 alt="Montpellier photo"
               />
-              <p class="hotel-name">Montpellier</p>
-              <p class="hotel-quantity">11 386 hotels</p>
+              <div class="card-text">
+                <p class="hotel-name">Montpellier</p>
+                <p class="hotel-quantity">11 386 hotels</p>
+              </div>
             </li>
-            <li class="france-item">
+            <li class="ad-item">
               <img
                 class="hotel-image"
                 src="./images/france-3-desctope-2x.jpg"
                 alt="Paris foto"
               />
-              <p class="hotel-name">Paris</p>
-              <p class="hotel-quantity">12 278 hotels</p>
+              <div class="card-text">
+                <p class="hotel-name">Paris</p>
+                <p class="hotel-quantity">12 278 hotels</p>
+              </div>
             </li>
           </ul>
 
-          <h3 class="country-title">Italy</h3>
-          <button class="italy-button" type="submit">Open all ads</button>
+          <div class="position">
+            <h3 class="country-title">Italy</h3>
+            <button class="all-ads-button btn" type="submit">
+              Open all ads
+            </button>
+          </div>
+
           <ul class="ad-list">
-            <li class="italy-item">
+            <li class="ad-item">
               <img
                 class="hotel-image"
                 src="./images/italy-3-desctope-2x.jpg"
                 alt="Venezia photo"
               />
-              <p class="hotel-name">Venezia</p>
-              <p class="hotel-quantity">14 120 hotels</p>
+              <div class="card-text">
+                <p class="hotel-name">Venezia</p>
+                <p class="hotel-quantity">14 120 hotels</p>
+              </div>
             </li>
-            <li class="italy-item">
+            <li class="ad-item">
               <img
                 class="hotel-image"
                 src="./images/italy-2-desctope-2x.jpg"
                 alt="Firenze photo"
               />
-              <p class="hotel-name">Firenze</p>
-              <p class="hotel-quantity">7 988 hotels</p>
+              <div class="card-text">
+                <p class="hotel-name">Firenze</p>
+                <p class="hotel-quantity">7 988 hotels</p>
+              </div>
             </li>
-            <li class="italy-item">
+            <li class="ad-item">
               <img
                 class="hotel-image"
                 src="./images/italy-1-desctope-2x.jpg"
                 alt="Roma photo"
               />
-              <p class="hotel-name">Roma</p>
-              <p class="hotel-quantity">12 809 hotels</p>
+              <div class="card-text">
+                <p class="hotel-name">Roma</p>
+                <p class="hotel-quantity">12 809 hotels</p>
+              </div>
             </li>
           </ul>
 
-          <h3 class="country-title">Spain</h3>
-          <button class="spain-button" type="submit">Open all ads</button>
+          <div class="position">
+            <h3 class="country-title">Spain</h3>
+            <button class="all-ads-button btn" type="submit">
+              Open all ads
+            </button>
+          </div>
           <ul class="ad-list">
-            <li class="spain-item">
+            <li class="ad-item">
               <img
                 class="hotel-image"
                 src="./images/spain-1-desctope-2x.jpg"
                 alt="Selvia photo"
               />
-              <p class="hotel-name">Selvia</p>
-              <p class="hotel-quantity">8 984 hotels</p>
+              <div class="card-text">
+                <p class="hotel-name">Selvia</p>
+                <p class="hotel-quantity">8 984 hotels</p>
+              </div>
             </li>
-            <li class="spain-item">
+            <li class="ad-item">
               <img
                 class="hotel-image"
                 src="./images/spain-2-desctope-2x.jpg"
                 alt="Madrid photo"
               />
-              <p class="hotel-name">Madrid</p>
-              <p class="hotel-quantity">15 325 hotels</p>
+              <div class="card-text">
+                <p class="hotel-name">Madrid</p>
+                <p class="hotel-quantity">15 325 hotels</p>
+              </div>
             </li>
-            <li class="spain-item">
+            <li class="ad-item">
               <img
                 class="hotel-image"
                 src="./images/spain-3-desctope-2x.jpg"
                 alt="Mallorca photo"
               />
-              <p class="hotel-name">Mallorca</p>
-              <p class="hotel-quantity">9 825 hotels</p>
+              <div class="card-text">
+                <p class="hotel-name">Mallorca</p>
+                <p class="hotel-quantity">9 825 hotels</p>
+              </div>
             </li>
           </ul>
         </div>
@@ -223,107 +257,131 @@
 
       <section class="announcements">
         <div class="container">
-          <h2 class="announcements-title">Next announcements</h2>
-          <!-- <button class="announcements-button" type="submit">
-            Open all ads
-          </button> -->
+          <div class="position">
+            <h2 class="announcements-title">Next announcements</h2>
+            <button class="all-ads-button btn" type="submit">
+              Open all ads
+            </button>
+          </div>
           <ul class="announcements-list">
-            <li class="announcements-list">
+            <li class="announcements-item">
               <img
                 class="hotel-image"
                 src="./images/desctope-1-2x.jpg"
                 alt="Vila Gale Lagos Hotel room photo"
               />
-              <h3 class="hotel-name">Vila Gale Lagos Hotel</h3>
-              <p class="hotel-location">Andresen, Portugal</p>
-              <p class="hotel-rating">7,1</p>
+              <div class="card-text">
+                <h3 class="hotel-name">Vila Gale Lagos Hotel</h3>
+                <p class="hotel-location">Andresen, Portugal</p>
+                <p class="hotel-rating">7,1</p>
+              </div>
             </li>
-            <li class="announcements-list">
+            <li class="announcements-item">
               <img
                 class="hotel-image"
                 src="./images/desctope-2-2x.jpg"
                 alt="Cala Moresca room photo"
               />
-              <h3 class="hotel-name">Cala Moresca</h3>
-              <p class="hotel-location">Via Faro, Italy</p>
-              <p class="hotel-rating">8,6</p>
+              <div class="card-text">
+                <h3 class="hotel-name">Cala Moresca</h3>
+                <p class="hotel-location">Via Faro, Italy</p>
+                <p class="hotel-rating">8,6</p>
+              </div>
             </li>
-            <li class="announcements-list">
+            <li class="announcements-item">
               <img
                 class="hotel-image"
                 src="./images/desctope-3-2x.jpg"
                 alt="Horison Blu room photo"
               />
-              <h3 class="hotel-name">Horison Blu</h3>
-              <p class="hotel-location">Petrou Karakousi, Greece</p>
-              <p class="hotel-rating">5,9</p>
+              <div class="card-text">
+                <h3 class="hotel-name">Horison Blu</h3>
+                <p class="hotel-location">Petrou Karakousi, Greece</p>
+                <p class="hotel-rating">5,9</p>
+              </div>
             </li>
-            <li class="announcements-list">
+            <li class="announcements-item">
               <img
                 class="hotel-image"
                 src="./images/desctope-4-2x.jpg"
                 alt="Le Galion Hotel room photo"
               />
-              <h3 class="hotel-name">Le Galion Hotel</h3>
-              <p class="hotel-location">Saint-Martin-de-Re, France</p>
-              <p class="hotel-rating">8,4</p>
+              <div class="card-text">
+                <h3 class="hotel-name">Le Galion Hotel</h3>
+                <p class="hotel-location">Saint-Martin-de-Re, France</p>
+                <p class="hotel-rating">8,4</p>
+              </div>
             </li>
-            <li class="announcements-list">
+            <li class="announcements-item">
               <img
                 class="hotel-image"
                 src="./images/desctope-5-2x.jpg"
                 alt="Molitor Hotel room photo"
               />
-              <h3 class="hotel-name">Molitor Hotel</h3>
-              <p class="hotel-location">Paris, France</p>
-              <p class="hotel-rating">6,9</p>
+              <div class="card-text">
+                <h3 class="hotel-name">Molitor Hotel</h3>
+                <p class="hotel-location">Paris, France</p>
+                <p class="hotel-rating">6,9</p>
+              </div>
             </li>
-            <li>
+            <li class="announcements-item">
               <img
                 class="hotel-image"
                 src="./images/desctope-6-2x.jpg"
                 alt="Sierra de Meira room photo"
               />
-              <h3 class="hotel-name">Sierra de Meira</h3>
-              <p class="hotel-location">Madrid, Spain</p>
-              <p class="hotel-rating">7,4</p>
+              <div class="card-text">
+                <h3 class="hotel-name">Sierra de Meira</h3>
+                <p class="hotel-location">Madrid, Spain</p>
+                <p class="hotel-rating">7,4</p>
+              </div>
             </li>
-            <li>
+            <li class="announcements-item">
               <img
                 class="hotel-image"
                 src="./images/desctope-7-2x.jpg"
                 alt="Petit Hotel room photo"
               />
-              <h3 class="hotel-name">Petit Hotel</h3>
-              <p class="hotel-location">Madrid, Spain</p>
-              <p class="hotel-rating">7,2</p>
+              <div class="card-text">
+                <h3 class="hotel-name">Petit Hotel</h3>
+                <p class="hotel-location">Madrid, Spain</p>
+                <p class="hotel-rating">7,2</p>
+              </div>
             </li>
-            <li class="announcements-list">
+            <li class="announcements-item">
               <img
                 class="hotel-image"
                 src="./images/desctope-8-2x.jpg"
                 alt="Gran Hotel room photo"
               />
-              <h3 class="hotel-name">Gran Hotel</h3>
-              <p class="hotel-location">Alicante, Spain</p>
-              <p class="hotel-rating">8,9</p>
+              <div class="card-text">
+                <h3 class="hotel-name">Gran Hotel</h3>
+                <p class="hotel-location">Alicante, Spain</p>
+                <p class="hotel-rating">8,9</p>
+              </div>
             </li>
-            <li class="announcements-list">
+            <li class="announcements-item">
               <img
                 class="hotel-image"
                 src="./images/desctope-9-2x.jpg"
                 alt="KViHotel room photo"
               />
-              <h3 class="hotel-name">KViHotel</h3>
-              <p class="hotel-location">Madrid, Spain</p>
-              <p class="hotel-rating">7,2</p>
+              <div class="card-text">
+                <h3 class="hotel-name">KViHotel</h3>
+                <p class="hotel-location">Madrid, Spain</p>
+                <p class="hotel-rating">7,2</p>
+              </div>
             </li>
           </ul>
         </div>
       </section>
-    </main>
-    <footer class="footer">
+    </main> -->
+    <!-- <footer class="footer">
       <div class="container">
+        <svg class="" width="96" height="87">
+          <use href="./symbol-defs.svg#icon-Logo"></use>
+        </svg>
+
         <ul class="footer-list">
           <li class="footer-item">Main</li>
           <li class="footer-item">Favourites</li>
@@ -337,8 +395,10 @@
               href=""
               targer="_blank"
               rel="noopener noreferrer nofollow"
-              >FaceBook</a
-            >
+              ><svg class="soc-icons" width="24" height="24">
+                <use href="symbol-defs.svg#icon-facebook"></use>
+              </svg>
+            </a>
           </li>
           <li class="footer-soc-media-list">
             <a
@@ -346,8 +406,10 @@
               href=""
               targer="_blank"
               rel="noopener noreferrer nofollow"
-              >YouTube</a
-            >
+              ><svg class="soc-icons" width="24" height="24">
+                <use href="symbol-defs.svg#icon-youtube"></use>
+              </svg>
+            </a>
           </li>
           <li class="footer-soc-media-list">
             <a
@@ -355,8 +417,10 @@
               href=""
               targer="_blank"
               rel="noopener noreferrer nofollow"
-              >Instagram</a
-            >
+              ><svg class="soc-icons" width="24" height="24">
+                <use href="symbol-defs.svg#icon-instagram"></use>
+              </svg>
+            </a>
           </li>
           <li class="footer-soc-media-list">
             <a
@@ -364,12 +428,14 @@
               href=""
               targer="_blank"
               rel="noopener noreferrer nofollow"
-              >X</a
-            >
+              ><svg class="soc-icons" width="24" height="24">
+                <use href="symbol-defs.svg#icon-twitter"></use>
+              </svg>
+            </a>
           </li>
         </ul>
         <p class="copyright">&copy; All rights reserved</p>
       </div>
-    </footer>
+    </footer> -->
   </body>
 </html>
