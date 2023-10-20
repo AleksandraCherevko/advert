@@ -21,7 +21,7 @@
     <link rel="stylesheet" href="./styles.css/desctope.css" />
   </head>
   <body>
-    <header class="header">
+    <!-- <header class="header">
       <div class="container header-container">
         <svg class="" width="87" height="85">
           <use href="./symbol-defs.svg#icon-Logo"></use>
@@ -71,9 +71,9 @@
         </ul>
         <button class="header-button btn" type="_submit">registration</button>
       </div>
-    </header>
-    <!-- <main class="main">
-      <section class="hero">
+    </header> -->
+    <main class="main">
+      <!-- <section class="hero">
         <div class="container">
           <h1 class="hero-title">find your own place</h1>
           <div class="button-container">
@@ -81,47 +81,119 @@
             <button class="hero-button btn">submit an ad</button>
           </div>
         </div>
-      </section>
+      </section> -->
       <section class="ad-criteria">
         <div class="container">
-          <h2 class="ad-criteria-title">Ad criteria</h2>
+          <h2 class="main-title">Ad criteria</h2>
           <ul class="ad-criteria-list">
             <li class="ad-criteria-item">
-              <img
-                class="ad-criteria-image"
-                src="./images/house-desctope-2x.jpg"
-                alt="house image"
-              />
+              <picture class="criteria-image">
+                <source
+                  srcset="
+                    ./images/house-desctope-1x.jpg 1x,
+                    ./images/house-desctope-2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/house-tablet-1x.jpg 1x,
+                    ./images/house-tablet-2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+
+                <img
+                  src="./images/house-phone-1x.jpg"
+                  alt="house"
+                  width="350"
+                  height="280"
+                />
+              </picture>
               <p class="ad-criteria-text">houses</p>
             </li>
-            <li class="ad-criteria-item">
-              <img
-                class="ad-criteria-image"
-                src="./images/apartmens-desctope-2x.jpg"
-                alt="studios image"
-              />
+            <li class="ad-criteria-item img-hidden">
+              <picture class="criteria-image">
+                <source
+                  srcset="
+                    ./images/studium-desctope-1x.jpg 1x,
+                    ./images/studium-desctope-2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/studium-tablet-1x.jpg 1x,
+                    ./images/studium-tablet-2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+
+                <img
+                  src="./images/house-phone-1x.jpg"
+                  alt="studium"
+                  width="350"
+                  height="280"
+                />
+              </picture>
               <p class="ad-criteria-text">studios</p>
             </li>
-            <li class="ad-criteria-item">
-              <img
-                class="ad-criteria-image"
-                src="./images/flat-desctope-2x.jpg"
-                alt="apartments image"
-              />
+            <li class="ad-criteria-item img-hidden">
+              <picture class="criteria-image">
+                <source
+                  srcset="
+                    ./images/flat-desctope-1x.jpg 1x,
+                    ./images/flat-desctope-2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/flat-tablet-1x.jpg 1x,
+                    ./images/flat-tablet-2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+
+                <img
+                  src="./images/house-phone-1x.jpg"
+                  alt="flat"
+                  width="350"
+                  height="280"
+                />
+              </picture>
               <p class="ad-criteria-text">apartments</p>
             </li>
-            <li class="ad-criteria-item">
-              <img
-                class="ad-criteria-image"
-                src="./images/room-desctope-2x.jpg"
-                alt="rooms image"
-              />
+            <li class="ad-criteria-item img-hidden">
+              <picture class="criteria-image">
+                <source
+                  srcset="
+                    ./images/bedroom-desctope-1x.jpg 1x,
+                    ./images/bedroom-desctope-2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/bedroom-tablet-1x.jpg 1x,
+                    ./images/bedroom-tablet-2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+
+                <img
+                  src="./images/house-phone-1x.jpg"
+                  alt="bedroom"
+                  width="350"
+                  height="280"
+                />
+              </picture>
               <p class="ad-criteria-text">rooms</p>
             </li>
           </ul>
         </div>
       </section>
-      <section class="all-ads">
+      <!-- <section class="all-ads">
         <div class="container">
           <h2 class="france-main-title">
             The most popular countries for travel
@@ -253,9 +325,9 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
 
-      <section class="announcements">
+      <!-- <section class="announcements">
         <div class="container">
           <div class="position">
             <h2 class="announcements-title">Next announcements</h2>
@@ -374,8 +446,8 @@
             </li>
           </ul>
         </div>
-      </section>
-    </main> -->
+      </section> -->
+    </main>
     <!-- <footer class="footer">
       <div class="container">
         <svg class="" width="96" height="87">

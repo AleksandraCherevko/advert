@@ -102,6 +102,15 @@ p {
   fill: white;
 }
 
+.main-title {
+  font-family: Play;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: 0em;
+  text-align: center;
+}
+
 /* HEADER */
 
 .header > .container {
@@ -135,42 +144,77 @@ p {
   min-width: 139px;
   margin-left: auto;
 }
-/* 
 
+/* HERO */
 
-
-
-
-.header-button {
-  min-width: 209px;
-  margin-left: auto;
-} */
-
-/* MAIN */
-/* .hero {
-  padding-top: 100px;
-  padding-bottom: 533px;
-  background-color: gray;
-  background-image: url(../images/hero-desctope-2x.jpg);
-  background-size: cover;
+.hero > .container {
+  max-width: 336px;
+  width: 100%;
 }
+
+.hero {
+  padding-top: 40px;
+  padding-bottom: 456px;
+  background-image: url(../images/hero-mobile-2x.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
 .hero-title {
-  margin-bottom: 100px;
+  margin-bottom: 40px;
+
+  display: inline-block;
   font-family: Impact;
-  font-size: 80px;
+  font-size: 40px;
   font-weight: 400;
   line-height: 1;
   letter-spacing: 0em;
   color: var(--accent-color);
   text-transform: uppercase;
 }
+.hero-button {
+  min-width: 261px;
+}
+
 .button-container {
   display: flex;
-  justify-content: space-evenly;
+  flex-wrap: wrap;
+  justify-content: center;
+  row-gap: 20px;
 }
-.hero-button {
-  min-width: 280px;
-} */
+
+/* MAIN */
+
+.ad-criteria > .container {
+  max-width: 380px;
+  width: 100%;
+}
+
+.ad-criteria {
+  padding-top: 32px;
+  padding-bottom: 47px;
+}
+.ad-criteria-list {
+  text-align: center;
+}
+.ad-criteria-text {
+  margin-top: 20px;
+  font-family: Play;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 1;
+  letter-spacing: 0em;
+  text-align: center;
+}
+
+.img-hidden {
+  display: none;
+}
+
+.main-title {
+  margin-bottom: 40px;
+}
+
 /* Ads */
 /* .position {
   margin-top: 32px;

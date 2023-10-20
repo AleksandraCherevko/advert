@@ -26,4 +26,55 @@
     min-width: 209px;
     margin-left: auto;
   }
+
+  /* hero */
+
+  .hero > .container {
+    max-width: 775px;
+    width: 100%;
+  }
+
+  .hero {
+    padding-top: 100px;
+    padding-bottom: 533px;
+    background-image: url(../images/hero-desctope-2x.jpg);
+    background-position: center;
+  }
+
+  .hero-title {
+    font-size: 80px;
+    font-weight: 400;
+    line-height: 1;
+    letter-spacing: 0em;
+    text-align: center;
+  }
+
+  .button-container {
+    justify-content: space-between;
+  }
+
+  /* ad-criterias */
+
+  .ad-criteria > .container {
+    max-width: 1280px;
+    width: 100%;
+  }
+
+  .ad-criteria {
+    padding-top: 52px;
+    padding-bottom: 68px;
+  }
+  .img-hidden {
+    display: block;
+  }
+  .ad-criteria-list {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 20px;
+    row-gap: 36px;
+  }
+
+  .ad-criteria-item {
+    flex-basis: calc((100% - 20px) / 2);
+  }
 }
