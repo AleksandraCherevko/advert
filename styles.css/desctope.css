@@ -77,4 +77,49 @@
   .ad-criteria-item {
     flex-basis: calc((100% - 20px) / 2);
   }
+
+  /* all ads */
+  .all-ads > .container {
+    max-width: 1280px;
+    width: 100%;
+  }
+
+  .all-ads {
+    padding-top: 32px;
+    padding-bottom: 46px;
+  }
+
+  .all-ads-title {
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 1;
+    letter-spacing: 0em;
+  }
+  .hotel-location {
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 1;
+  }
+  .ad-list {
+    display: flex;
+    column-gap: 20px;
+    row-gap: 32px;
+  }
+  .ad-item {
+    flex-basis: calc((100% - 40px) / 3);
+  }
+
+  .all-ads-button {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 1;
+    letter-spacing: 0em;
+  }
+
+  .position {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    justify-content: space-between;
+  }
 }

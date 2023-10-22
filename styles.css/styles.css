@@ -110,6 +110,25 @@ p {
   letter-spacing: 0em;
   text-align: center;
 }
+.all-ads-button {
+  margin-bottom: 20px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1;
+  letter-spacing: 0em;
+
+  padding: 0;
+  color: var(--accent-color);
+  border-bottom: 2px solid var(--accent-color);
+  border-top: transparent;
+  border-left: transparent;
+  border-right: transparent;
+}
+
+.all-ads-button:hover,
+.all-ads-button:focus {
+  color: white;
+}
 
 /* HEADER */
 
@@ -214,8 +233,81 @@ p {
 .main-title {
   margin-bottom: 40px;
 }
+.ad-criteria-item {
+  flex-basis: 350px;
+}
 
 /* Ads */
+.all-ads > .container {
+  max-width: 380px;
+  width: 100%;
+}
+
+.all-ads {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.all-ads-title {
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 1.25;
+  text-align: start;
+}
+.position {
+  /* margin-top: 32px;
+  margin-bottom: 32px; */
+  display: flex;
+  row-gap: 20px;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.hotel-location {
+  margin-top: 20px;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: 0em;
+}
+
+.hotel-name,
+.hotel-quantity {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: 0em;
+  text-align: start;
+}
+.hotel-name {
+  margin-top: 20px;
+}
+
+/* announcements */
+
+.announcements > .container {
+  max-width: 380px;
+  width: 100%;
+}
+
+.announcements {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.hotel-card-location {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1;
+  letter-spacing: 0em;
+  color: #766f6f;
+}
+
+.hotel-rating {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1;
+  letter-spacing: 0em;
+  color: var(--accent-color);
+}
 /* .position {
   margin-top: 32px;
   margin-bottom: 32px;
