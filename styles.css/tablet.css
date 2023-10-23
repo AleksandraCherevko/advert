@@ -128,4 +128,57 @@
     align-items: baseline;
     justify-content: space-between;
   }
+
+  /* announcements */
+
+  .announcements > .container {
+    max-width: 770px;
+    width: 100%;
+  }
+
+  .announcements {
+    padding-top: 24px;
+    padding-bottom: 24px;
+  }
+
+  .announcements-list {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 20px;
+  }
+
+  .announcements-item {
+    flex-basis: calc((100% - 20px) / 2);
+  }
+
+  /* footer */
+  .footer > .container {
+    max-width: 834px;
+    width: 100%;
+  }
+
+  .footer {
+    padding-top: 24px;
+    padding-bottom: 32px;
+  }
+
+  .footer-list-container {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .footer-list {
+    flex-direction: row;
+    gap: 20px;
+  }
+
+  .soc-icons {
+    width: 24px;
+    height: 24px;
+  }
+  .footer-item {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 1.3;
+  }
 }
