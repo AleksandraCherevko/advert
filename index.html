@@ -23,7 +23,13 @@
   <body>
     <header class="header">
       <div class="container header-container">
-        <svg class="" width="87" height="85">
+        <button data-menu-open type="button" class="mob-button">
+          <svg class="burger" width="40" height="30">
+            <use href="./symbol-defs.svg#icon-burger"></use>
+          </svg>
+        </button>
+
+        <svg class="header-icon" width="73" height="62">
           <use href="./symbol-defs.svg#icon-Logo"></use>
         </svg>
         <ul class="header-list">
@@ -31,7 +37,7 @@
             <a
               class="header-link"
               href="./index.html"
-              targer="_blank"
+              target="_blank"
               rel="noopener noreferrer nofollow"
               >Main</a
             >
@@ -40,7 +46,7 @@
             <a
               class="header-link"
               href="./second.html"
-              targer="_blank"
+              target="_blank"
               rel="noopener noreferrer nofollow"
               >All adverts</a
             >
@@ -63,13 +69,43 @@
             <a
               class="header-link"
               href=""
-              targer="_blank"
+              target="_blank"
               rel="noopener noreferrer nofollow"
               >User account</a
             >
           </li>
         </ul>
-        <button class="header-button btn" type="_submit">registration</button>
+        <button class="header-button btn" type="submit">registration</button>
+      </div>
+      <div class="mob-menu is-hidden is-open" data-menu>
+        <div class="container">
+          <button type="button" class="menu-close" data-menu-close>
+            <svg class="mob-close" width="20" height="20">
+              <use href="./symbol-defs.svg#icon-close"></use>
+            </svg>
+          </button>
+          <ul class="mob-list">
+            <li class="mob-item">
+              <a class="mob-link" href="./index.html">main</a>
+            </li>
+            <li class="mob-item">
+              <a class="mob-link" href="./second.html">all adverts</a>
+            </li>
+            <li class="mob-item">
+              <a class="mob-link" href="">favourites </a
+              ><svg class="header-icon" width="35" height="35">
+                <use href="symbol-defs.svg#icon-vector"></use>
+                class="mob-link"
+              </svg>
+            </li>
+            <li class="mob-item">
+              <a class="mob-link" href="">user account </a>
+              <svg class="header-icon" width="35" height="35">
+                <use href="symbol-defs.svg#icon-user"></use>
+              </svg>
+            </li>
+          </ul>
+        </div>
       </div>
     </header>
     <main class="main">
@@ -796,7 +832,7 @@
             <a
               class="footer-soc-media-link"
               href="https://cs-cz.facebook.com/"
-              targer="_blank"
+              target="_blank"
               rel="noopener noreferrer nofollow"
               ><svg class="soc-icons" width="20" height="20">
                 <use href="symbol-defs.svg#icon-facebook"></use>
@@ -807,7 +843,7 @@
             <a
               class="footer-soc-media-link"
               href="https://www.youtube.com/"
-              targer="_blank"
+              target="_blank"
               rel="noopener noreferrer nofollow"
               ><svg class="soc-icons" width="20" height="20">
                 <use href="symbol-defs.svg#icon-youtube"></use>
@@ -818,7 +854,7 @@
             <a
               class="footer-soc-media-link"
               href="https://www.instagram.com/"
-              targer="_blank"
+              target="_blank"
               rel="noopener noreferrer nofollow"
               ><svg class="soc-icons" width="20" height="20">
                 <use href="symbol-defs.svg#icon-instagram"></use>
@@ -829,7 +865,7 @@
             <a
               class="footer-soc-media-link"
               href="https://twitter.com/?lang=uk"
-              targer="_blank"
+              target="_blank"
               rel="noopener noreferrer nofollow"
               ><svg class="soc-icons" width="20" height="20">
                 <use href="symbol-defs.svg#icon-twitter"></use>
@@ -840,5 +876,7 @@
         <p class="copyright">&copy; All rights reserved</p>
       </div>
     </footer>
+
+    <script src="/js/modal.js"></script>
   </body>
 </html>

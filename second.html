@@ -15,11 +15,18 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
     />
     <link rel="stylesheet" href="./styles.css/styles.css" />
-    <link rel="stylesheet" href="./styles.css/desctop.css" />
+    <link rel="stylesheet" href="./styles.css/mobile.css" />
+    <link rel="stylesheet" href="./styles.css/tablet.css" />
+    <link rel="stylesheet" href="./styles.css/desctope.css" />
   </head>
   <body>
     <header class="header">
       <div class="container header-container">
+        <button data-menu-open type="button" class="mob-button">
+          <svg class="burger" width="40" height="30">
+            <use href="./symbol-defs.svg#icon-burger"></use>
+          </svg>
+        </button>
         <svg class="" width="87" height="85">
           <use href="./symbol-defs.svg#icon-Logo"></use>
         </svg>
@@ -28,7 +35,7 @@
             <a
               class="header-link"
               href="./index.html"
-              targer="_blank"
+              target="_blank"
               rel="noopener noreferrer nofollow"
               >Main</a
             >
@@ -37,7 +44,7 @@
             <a
               class="header-link"
               href="./second.html"
-              targer="_blank"
+              target="_blank"
               rel="noopener noreferrer nofollow"
               >All adverts</a
             >
@@ -60,64 +67,129 @@
             <a
               class="header-link"
               href=""
-              targer="_blank"
+              target="_blank"
               rel="noopener noreferrer nofollow"
               >User account</a
             >
           </li>
         </ul>
-        <button class="header-button btn" type="_submit">registration</button>
       </div>
     </header>
     <main>
       <section class="announcements">
         <div class="container">
-          <h2 class="ad-criteria-title">All announcements</h2>
+          <h2 class="main-title">All announcements</h2>
         </div>
       </section>
       <section class="economy">
         <div class="container">
           <div class="position">
-            <h3 class="country-title">Super economy</h3>
+            <h3 class="hotel-location">Super economy</h3>
             <button class="all-ads-button btn" type="submit">
               Open all ads
             </button>
           </div>
           <ul class="ad-list">
-            <li class="economy-item">
-              <img
-                class="hotel-image"
-                src="./images/second-page-desctope-1-2x.jpg"
-                alt="Silver Hotel image"
-              />
+            <li class="ad-item">
+              <picture class="ad-image">
+                <source
+                  srcset="
+                    ./images/silver-desctop-1x.jpg 1x,
+                    ./images/silver-desctop-2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/silver-tablet-1x.jpg 1x,
+                    ./images/silver-tablet-2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+
+                <img
+                  src="./images/silver-mob-2x.jpg"
+                  alt="Silver Hotel"
+                  style="width: auto"
+                />
+              </picture>
               <div class="card-text">
                 <p class="hotel-name">Silver Hotel</p>
-                <p class="hotel-location">Petrou Karakousi, Greece</p>
-                <p class="hotel-rating">7,4</p>
+                <p class="hotel-card-location">Petrou Karakousi, Greece</p>
+                <p class="hotel-rating">
+                  <svg class="star-icon" width="14" height="14">
+                    <use href="symbol-defs.svg#icon-star"></use>
+                  </svg>
+                  7,4
+                </p>
               </div>
             </li>
-            <li class="economy-item">
-              <img
-                class="hotel-image"
-                src="./images/second-page-desctope-2-2x.jpg"
-                alt=""
-              />
+            <li class="ad-item">
+              <picture class="ad-image">
+                <source
+                  srcset="
+                    ./images/erzsébet-desctop-1x.jpg 1x,
+                    ./images/erzsébet-desctop-2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/erzsébet-tablet-1x.jpg 1x,
+                    ./images/erzsébet-tablet-2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+
+                <img
+                  src="./images/erzsébet-mob-2x.jpg"
+                  alt="Erzsébet"
+                  style="width: auto"
+                />
+              </picture>
               <div class="card-text">
                 <p class="hotel-name">Erzsébet</p>
-                <p class="hotel-location">Alicante, Spain</p>
-                <p class="hotel-rating">6,2</p>
+                <p class="hotel-card-location">Alicante, Spain</p>
+                <p class="hotel-rating">
+                  <svg class="star-icon" width="14" height="14">
+                    <use href="symbol-defs.svg#icon-star"></use>
+                  </svg>
+                  6,2
+                </p>
               </div>
             </li>
-            <li class="economy-item">
-              <img
-                class="hotel-image"
-                src="./images/second-page-desctope-3-2x.jpg"
-                alt="KViHotel image"
-              />
+            <li class="ad-item img-hidden list-hidden">
+              <picture class="ad-image">
+                <source
+                  srcset="
+                    ./images/kvi-desctop-1x.jpg 1x,
+                    ./images/kvi-desctop-2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/erzsébet-tablet-1x.jpg 1x,
+                    ./images/erzsébet-tablet-2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+
+                <img
+                  src="./images/erzsébet-mob-2x.jpg"
+                  alt="KViHotel"
+                  style="width: auto"
+                />
+              </picture>
               <div class="card-text">
                 <p class="hotel-name">KViHotel</p>
-                <p class="hotel-location">Madrid, Spain</p>
-                <p class="hotel-rating">7,2</p>
+                <p class="hotel-card-location">Madrid, Spain</p>
+                <p class="hotel-rating">
+                  <svg class="star-icon" width="14" height="14">
+                    <use href="symbol-defs.svg#icon-star"></use>
+                  </svg>
+                  7,2
+                </p>
               </div>
             </li>
           </ul>
@@ -126,46 +198,103 @@
       <section class="spec-offer">
         <div class="container">
           <div class="position">
-            <h3 class="country-title">Special offer</h3>
+            <h3 class="hotel-location">Special offer</h3>
             <button class="all-ads-button btn" type="submit">
               Open all ads
             </button>
           </div>
           <ul class="ad-list">
-            <li class="spec-offer-item">
-              <img
-                class="hotel-image"
-                src="./images/second-page-desctope-4-2x.jpg"
-                alt="Sierra de Meira image"
-              />
+            <li class="ad-item">
+              <picture class="ad-image">
+                <source
+                  srcset="
+                    ./images/sierra-desctop-1x.jpg 1x,
+                    ./images/sierra-desctop-2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)" />
+                <source
+                  srcset="
+                    ./images/sierra-tablet-1x.jpg 1x,
+                    ./images/sierra-tablet-2x.jpg 2x
+                  "
+                  media="(min-width: 768px)" />
+
+                <img
+                  src="./images/sierra-mob-2x.jpg"
+                  alt="Sierra de Meira"
+                  style="width: auto"
+              /></picture>
               <div class="card-text">
                 <p class="hotel-name">Sierra de Meira</p>
-                <p class="hotel-location">Madrid, Spain</p>
-                <p class="hotel-rating">7,4</p>
+                <p class="hotel-card-location">Madrid, Spain</p>
+                <p class="hotel-rating">
+                  <svg class="star-icon" width="14" height="14">
+                    <use href="symbol-defs.svg#icon-star"></use>
+                  </svg>
+                  7,4
+                </p>
               </div>
             </li>
-            <li class="hotel-item">
-              <img
-                class="hotel-image"
-                src="./images/second-page-desctope-5-2x.jpg"
-                alt="Molitor Hotel image"
-              />
+            <li class="ad-item img-hidden">
+              <picture class="ad-image">
+                <source
+                  srcset="
+                    ./images/molitor-desctop-1x.jpg 1x,
+                    ./images/molitor-desctop-2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)" />
+                <source
+                  srcset="
+                    ./images/molitor-tablet-1x.jpg 1x,
+                    ./images/molitor-tablet-2x.jpg 2x
+                  "
+                  media="(min-width: 768px)" />
+
+                <img
+                  src="./images/sierra-mob-2x.jpg"
+                  alt="Molitor Hotel"
+                  style="width: auto"
+              /></picture>
               <div class="card-text">
                 <p class="hotel-name">Molitor Hotel</p>
-                <p class="hotel-location">Paris, France</p>
-                <p class="hotelrating">6,9</p>
+                <p class="hotel-card-location">Paris, France</p>
+                <p class="hotel-rating">
+                  <svg class="star-icon" width="14" height="14">
+                    <use href="symbol-defs.svg#icon-star"></use>
+                  </svg>
+                  6,9
+                </p>
               </div>
             </li>
-            <li class="spec-offer-item">
-              <img
-                class="hotel-image"
-                src="./images/second-page-desctope-6-2x.jpg"
-                alt="Le Galion Hotel imaga"
-              />
+            <li class="ad-item img-hidden list-hidden">
+              <picture class="ad-image">
+                <source
+                  srcset="
+                    ./images/galion-desctop-1x.jpg 1x,
+                    ./images/galion-desctop-2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)" />
+                <source
+                  srcset="
+                    ./images/molitor-tablet-1x.jpg 1x,
+                    ./images/molitor-tablet-2x.jpg 2x
+                  "
+                  media="(min-width: 768px)" />
+
+                <img
+                  src="./images/sierra-mob-2x.jpg"
+                  alt="Le Galion Hotel"
+                  style="width: auto"
+              /></picture>
               <div class="card-text">
                 <p class="hotel-name">Le Galion Hotel</p>
-                <p class="hotel-location">Saint-Martin-de-Re, France</p>
-                <p class="hotel-rating">8,4</p>
+                <p class="hotel-card-location">Saint-Martin-de-Re, France</p>
+                <p class="hotel-rating">
+                  <svg class="star-icon" width="14" height="14">
+                    <use href="symbol-defs.svg#icon-star"></use>
+                  </svg>
+                  8,4
+                </p>
               </div>
             </li>
           </ul>
@@ -174,154 +303,401 @@
       <section class="popular">
         <div class="container">
           <div class="position">
-            <h3 class="country-title">Popular ads</h3>
+            <h3 class="hotel-location">Popular ads</h3>
             <button class="all-ads-button btn" type="submit">
               Open all ads
             </button>
           </div>
           <ul class="announcements-list">
             <li class="announcements-item">
-              <img
-                class="hotel-image"
-                src="./images/second-page-desctope-7-2x.jpg"
-                alt="ENA Chalets image"
-              />
+              <picture class="announcements-image">
+                <source
+                  srcset="
+                    ./images/ena-desctop-1x.jpg 1x,
+                    ./images/ena-desctop-2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/ena-tablet-1x.jpg 1x,
+                    ./images/ena-tablet-2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+
+                <img
+                  src="./images/ena-mob.jpg"
+                  alt="ENA Chalets"
+                  style="width: auto"
+                />
+              </picture>
+
+              <h3 class="hotel-name">ENA Chalets</h3>
+              <p class="hotel-card-location">Lido di Spina, Italy</p>
+              <p class="hotel-rating">
+                <svg class="star-icon" width="14" height="14">
+                  <use href="symbol-defs.svg#icon-star"></use>
+                </svg>
+                7,2
+              </p>
+            </li>
+            <li class="announcements-item img-hidden">
+              <picture class="announcements-image">
+                <source
+                  srcset="
+                    ./images/aimolo-desctop-1x.jpg 1x,
+                    ./images/aimolo-desctop-2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/aimolo-tablet-1x.jpg 1x,
+                    ./images/aimolo-tablet-2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+
+                <img
+                  src="./images/aimolo-mob.jpg"
+                  alt="AlMolo5"
+                  style="width: auto"
+                />
+              </picture>
+
+              <h3 class="hotel-name">AlMolo5</h3>
+              <p class="hotel-card-location">Alicante, Spain</p>
+              <p class="hotel-rating">
+                <svg class="star-icon" width="14" height="14">
+                  <use href="symbol-defs.svg#icon-star"></use>
+                </svg>
+                6,4
+              </p>
+            </li>
+            <li class="announcements-item img-hidden">
+              <picture class="announcements-image">
+                <source
+                  srcset="
+                    ./images/just-desctop-1x.jpg 1x,
+                    ./images/just-desctop-2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/3-tablet-1x.jpg 1x,
+                    ./images/3-tablet-2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <img
+                  src="./images/just-mob.jpg"
+                  alt="Horison Blu"
+                  style="width: auto"
+                />
+              </picture>
               <div class="card-text">
-                <p class="hotel-name">ENA Chalets</p>
-                <p class="hotel-location">Lido di Spina, Italy</p>
-                <p class="hotel-rating">7,2</p>
+                <h3 class="hotel-name">Just be & b</h3>
+                <p class="hotel-card-location">Petrou Karakousi, Greece</p>
+                <p class="hotel-rating">
+                  <svg class="star-icon" width="14" height="14">
+                    <use href="symbol-defs.svg#icon-star"></use>
+                  </svg>
+                  7,8
+                </p>
               </div>
             </li>
-            <li class="announcements-item">
-              <img
-                class="hotel-image"
-                src="./images/second-page-desctope-8-2x.jpg"
-                alt="AlMolo5 image"
-              />
-              <div class="card-text">
-                <p class="hotel-name">AlMolo5</p>
-                <p class="hotel-location">Alicante, Spain</p>
-                <p class="hotel-rating">6,4</p>
-              </div>
+            <li class="announcements-item list-hidden">
+              <picture class="announcements-image">
+                <source
+                  srcset="
+                    ./images/homes-desctop-1x.jpg 1x,
+                    ./images/homes-desctop-2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/homes-tablet-1x.jpg 1x,
+                    ./images/homes-tablet-2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <img
+                  src="./images/homes-mob.jpg"
+                  alt="HOMES"
+                  style="width: auto"
+                />
+              </picture>
+
+              <h3 class="hotel-name">HOMES</h3>
+              <p class="hotel-card-location">Erzhebetvaros, Budapest</p>
+              <p class="hotel-rating">
+                <svg class="star-icon" width="14" height="14">
+                  <use href="symbol-defs.svg#icon-star"></use>
+                </svg>
+                9,2
+              </p>
+            </li>
+            <li class="announcements-item img-hidden">
+              <picture class="announcements-image">
+                <source
+                  srcset="
+                    ./images/budget-desctop-1x.jpg 1x,
+                    ./images/budget-desctop-2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/budget-tablet-1x.jpg 1x,
+                    ./images/budget-tablet-2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <img
+                  src="./images/budget-mob.jpg"
+                  alt="Molitor Hotel"
+                  style="width: auto"
+                />
+              </picture>
+
+              <h3 class="hotel-name">Budget Apartment by Hi5</h3>
+              <p class="hotel-card-location">Saint-Martin-de-Re, France</p>
+              <p class="hotel-rating">
+                <svg class="star-icon" width="14" height="14">
+                  <use href="symbol-defs.svg#icon-star"></use>
+                </svg>
+                6,5
+              </p>
+            </li>
+            <li class="announcements-item img-hidden list-hidden">
+              <picture class="announcements-image">
+                <source
+                  srcset="
+                    ./images/east-desctop-1x.jpg 1x,
+                    ./images/east-desctop-2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/6-tablet-1x.jpg 1x,
+                    ./images/6-tablet-2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <img
+                  src="./images/east-mob.jpg"
+                  alt="East Station DeLuxe"
+                  style="width: auto"
+                />
+              </picture>
+
+              <h3 class="hotel-name">East Station DeLuxe</h3>
+              <p class="hotel-card-location">Leopoldstadt, Vienna</p>
+              <p class="hotel-rating">
+                <svg class="star-icon" width="14" height="14">
+                  <use href="symbol-defs.svg#icon-star"></use>
+                </svg>
+                5,4
+              </p>
             </li>
             <li class="announcements-item">
-              <img
-                class="hotel-image"
-                src="./images/second-page-desctope-9-2x.jpg"
-                alt="Just be & image"
-              />
-              <div class="card-text">
-                <p class="hotel-name">Just be & b</p>
-                <p class="hotel-location">Petrou Karakousi, Greece</p>
-                <p class="hotel-rating">7,8</p>
-              </div>
+              <picture class="announcements-image">
+                <source
+                  srcset="
+                    ./images/downtown-desctop-1x.jpg 1x,
+                    ./images/downtown-desctop-2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/downtown-tablet-1x.jpg 1x,
+                    ./images/downtown-tablet-2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <img
+                  src="./images/7-mob.jpg"
+                  alt="Downtown Homes Relax"
+                  style="width: auto"
+                />
+              </picture>
+
+              <h3 class="hotel-name">Downtown Homes Relax</h3>
+              <p class="hotel-card-location">Fatih, Istanbul</p>
+              <p class="hotel-rating">
+                <svg class="star-icon" width="14" height="14">
+                  <use href="symbol-defs.svg#icon-star"></use>
+                </svg>
+                5,1
+              </p>
             </li>
-            <li class="announcements-item">
-              <img
-                class="hotel-image"
-                src="./images/second-page-desctope-10-2x.jpg"
-                alt="HOMES image"
-              />
-              <div class="card-text">
-                <p class="hotel-name">HOMES</p>
-                <p class="hotel-location">Erzhebetvaros, Budapest</p>
-                <p class="hotel-rating">9,2</p>
-              </div>
+            <li class="announcements-item img-hidden">
+              <picture class="announcements-image">
+                <source
+                  srcset="
+                    ./images/pair-desctop-1x.jpg 1x,
+                    ./images/pair-desctop-2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/pair-tablet-1x.jpg 1x,
+                    ./images/pair-tablet-2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <img
+                  src="./images/7-mob.jpg"
+                  alt="Pair of Kings"
+                  style="width: auto"
+                />
+              </picture>
+
+              <h3 class="hotel-name">Pair of Kings</h3>
+              <p class="hotel-card-location">Podgurze, Krakow</p>
+              <p class="hotel-rating">
+                <svg class="star-icon" width="14" height="14">
+                  <use href="symbol-defs.svg#icon-star"></use>
+                </svg>
+                9,2
+              </p>
             </li>
-            <li class="announcements-item">
-              <img
-                class="hotel-image"
-                src="./images/second-page-desctope-11-2x.jpg"
-                alt="Budget Apartment by Hi5 image"
-              />
-              <div class="card-text">
-                <p class="hotel-name">Budget Apartment by Hi5</p>
-                <p class="hotel-location">Saint-Martin-de-Re, France</p>
-                <p class="hotel-rating">6,5</p>
-              </div>
+            <li class="announcements-item img-hidden list-hidden">
+              <picture class="announcements-image">
+                <source
+                  srcset="
+                    ./images/design-desctop-1x.jpg 1x,
+                    ./images/design-desctop-2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/9-tablet-1x.jpg 1x,
+                    ./images/9-tablet-2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <img
+                  src="./images/7-mob.jpg"
+                  alt="Design Apartment In Party"
+                  style="width: auto"
+                />
+              </picture>
+
+              <h3 class="hotel-name">Design Apartment In Party</h3>
+              <p class="hotel-card-location">Rudolfsheim-Fünfhaus, Vienna</p>
+              <p class="hotel-rating">
+                <svg class="star-icon" width="14" height="14">
+                  <use href="symbol-defs.svg#icon-star"></use>
+                </svg>
+                6,7
+              </p>
             </li>
+
             <li class="announcements-item">
-              <img
-                class="hotel-image"
-                src="./images/second-page-desctope-12-2x.jpg"
-                alt="East Station DeLuxe image"
-              />
-              <div class="card-text">
-                <p class="hotel-name">East Station DeLuxe</p>
-                <p class="hotel-location">Leopoldstadt, Vienna</p>
-                <p class="hotel-rating">5,4</p>
-              </div>
+              <picture class="announcements-image">
+                <source
+                  srcset="
+                    ./images/adagio-desctop-1x.jpg 1x,
+                    ./images/adagio-desctop-2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/adagio-tablet-1x.jpg 1x,
+                    ./images/adagio-tablet-2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+
+                <img
+                  src="./images/ena-mob.jpg"
+                  alt="Adagio Downtown MiniHotel"
+                  style="width: auto"
+                />
+              </picture>
+
+              <h3 class="hotel-name">Adagio Downtown MiniHotel</h3>
+              <p class="hotel-card-location">Baku, Azerbaijan</p>
+              <p class="hotel-rating">
+                <svg class="star-icon" width="14" height="14">
+                  <use href="symbol-defs.svg#icon-star"></use>
+                </svg>
+                8,8
+              </p>
             </li>
-            <li class="announcements-item">
-              <img
-                class="hotel-image"
-                src="./images/second-page-desctope-13-2x.jpg"
-                alt="Downtown Homes Relax image"
-              />
-              <div class="card-text">
-                <p class="hotel-name">Downtown Homes Relax</p>
-                <p class="hotel-location">Fatih, Istanbul</p>
-                <p class="hotel-rating">6,1</p>
-              </div>
+            <li class="announcements-item img-hidden">
+              <picture class="announcements-image">
+                <source
+                  srcset="
+                    ./images/benczur-desctop-1x.jpg 1x,
+                    ./images/benczur-desctop-2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/benczur-tablet-1x.jpg 1x,
+                    ./images/benczur-tablet-2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+
+                <img
+                  src="./images/aimolo-mob.jpg"
+                  alt="Benczur Hotel"
+                  style="width: auto"
+                />
+              </picture>
+
+              <h3 class="hotel-name">Benczur Hotel</h3>
+              <p class="hotel-card-location">Krakow, Poland</p>
+              <p class="hotel-rating">
+                <svg class="star-icon" width="14" height="14">
+                  <use href="symbol-defs.svg#icon-star"></use>
+                </svg>
+                5,5
+              </p>
             </li>
-            <li class="announcements-item">
-              <img
-                class="hotel-image"
-                src="./images/second-page-desctope-14-2x.jpg"
-                alt="Pair of Kings image"
-              />
+            <li class="announcements-item img-hidden list-hidden">
+              <picture class="announcements-image">
+                <source
+                  srcset="
+                    ./images/easy-desctop-1x.jpg 1x,
+                    ./images/easy-desctop-2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/3-tablet-1x.jpg 1x,
+                    ./images/3-tablet-2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <img
+                  src="./images/just-mob.jpg"
+                  alt="Easy Star Hotel"
+                  style="width: auto"
+                />
+              </picture>
               <div class="card-text">
-                <p class="hotel-name">Pair of Kings</p>
-                <p class="hotel-location">Podgurze, Krakow</p>
-                <p class="hotel-rating">9,2</p>
-              </div>
-            </li>
-            <li class="announcements-item">
-              <img
-                class="hotel-image"
-                src="./images/second-page-desctope-15-2x.jpg"
-                alt="Design Apartment In Party image"
-              />
-              <div class="card-text">
-                <p class="hotel-name">Design Apartment In Party</p>
-                <p class="hotel-location">Rudolfsheim-Fünfhaus, Vienna</p>
-                <p class="hotel-rating">6,7</p>
-              </div>
-            </li>
-            <li class="announcements-item">
-              <img
-                class="hotel-image"
-                src="./images/second-page-desctope-16-2x.jpg"
-                alt="Adagio Downtown MiniHotel image"
-              />
-              <div class="card-text">
-                <p class="hotel-name">Adagio Downtown MiniHotel</p>
-                <p class="hotel-location">Baku,Azerbaijan</p>
-                <p class="hotel-rating">8,8</p>
-              </div>
-            </li>
-            <li class="announcements-item">
-              <img
-                class="hotel-image"
-                src="./images/second-page-desctope-17-2x.jpg"
-                alt="Benczur Hotel image"
-              />
-              <div class="card-text">
-                <p class="hotel-name">Benczur Hotel</p>
-                <p class="hotel-location">Krakow, Poland</p>
-                <p class="hotel-rating">5,5</p>
-              </div>
-            </li>
-            <li class="announcements-item">
-              <img
-                class="hotel-image"
-                src="./images/second-page-desctope-18-2x.jpg"
-                alt="Easy Star Hotel image"
-              />
-              <div class="card-text">
-                <p class="hotel-name">Easy Star Hotel</p>
-                <p class="hotel-location">Andresen, Portugal</p>
-                <p class="hotel-rating">4,8</p>
+                <h3 class="hotel-name">Easy Star Hotel</h3>
+                <p class="hotel-card-location">Andresen, Portugal</p>
+                <p class="hotel-rating">
+                  <svg class="star-icon" width="14" height="14">
+                    <use href="symbol-defs.svg#icon-star"></use>
+                  </svg>
+                  4,8
+                </p>
               </div>
             </li>
           </ul>
@@ -331,51 +707,75 @@
     </main>
     <footer class="footer">
       <div class="container">
-        <ul class="footer-list">
-          <li class="footer-item">Main</li>
-          <li class="footer-item">Favourites</li>
-          <li class="footer-item">User</li>
-          <li class="footer-item">User account</li>
-        </ul>
+        <div class="footer-list-container">
+          <svg class="footer-icon" width="73" height="62">
+            <use href="./symbol-defs.svg#icon-Logo"></use>
+          </svg>
+
+          <ul class="footer-list">
+            <li class="footer-item">
+              <a class="footer-link" href="./index.html">Main</a>
+            </li>
+            <li class="footer-item">
+              <a class="footer-link" href="/">Favourites</a>
+            </li>
+            <li class="footer-item">
+              <a class="footer-link" href="/">User</a>
+            </li>
+            <li class="footer-item">
+              <a class="footer-link" href="/">User account</a>
+            </li>
+          </ul>
+        </div>
         <ul class="footer-social-media">
           <li class="footer-soc-media-list">
             <a
               class="footer-soc-media-link"
-              href=""
-              targer="_blank"
+              href="https://cs-cz.facebook.com/"
+              target="_blank"
               rel="noopener noreferrer nofollow"
-              >FaceBook</a
-            >
+              ><svg class="soc-icons" width="20" height="20">
+                <use href="symbol-defs.svg#icon-facebook"></use>
+              </svg>
+            </a>
           </li>
           <li class="footer-soc-media-list">
             <a
               class="footer-soc-media-link"
-              href=""
-              targer="_blank"
+              href="https://www.youtube.com/"
+              target="_blank"
               rel="noopener noreferrer nofollow"
-              >YouTube</a
-            >
+              ><svg class="soc-icons" width="20" height="20">
+                <use href="symbol-defs.svg#icon-youtube"></use>
+              </svg>
+            </a>
           </li>
           <li class="footer-soc-media-list">
             <a
               class="footer-soc-media-link"
-              href=""
-              targer="_blank"
+              href="https://www.instagram.com/"
+              target="_blank"
               rel="noopener noreferrer nofollow"
-              >Instagram</a
-            >
+              ><svg class="soc-icons" width="20" height="20">
+                <use href="symbol-defs.svg#icon-instagram"></use>
+              </svg>
+            </a>
           </li>
           <li class="footer-soc-media-list">
             <a
               class="footer-soc-media-link"
-              href=""
-              targer="_blank"
+              href="https://twitter.com/?lang=uk"
+              target="_blank"
               rel="noopener noreferrer nofollow"
-              >X</a
-            >
+              ><svg class="soc-icons" width="20" height="20">
+                <use href="symbol-defs.svg#icon-twitter"></use>
+              </svg>
+            </a>
           </li>
         </ul>
+        <p class="copyright">&copy; All rights reserved</p>
       </div>
     </footer>
+    <script src="/js/modal.js"></script>
   </body>
 </html>

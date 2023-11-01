@@ -86,6 +86,8 @@ p {
 
 .header-icon {
   fill: #266294;
+  display: inline-block;
+  vertical-align: baseline;
 }
 .star-icon {
   stroke: var(--accent-color);
@@ -131,6 +133,76 @@ p {
 .all-ads-button:hover,
 .all-ads-button:focus {
   color: white;
+}
+
+.burger {
+  fill: var(--accent-color);
+}
+
+/* MOB MENU */
+
+.backdrop.is-hidden .modal {
+  transform: translate(-50%, -50%) scale(1.25) rotate(45deg);
+}
+
+.mob-menu {
+  padding-top: 72px;
+  padding-right: 139px;
+  padding-bottom: 458px;
+  padding-left: 32px;
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  width: 100%;
+  height: 100vh;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  background-color: #cfe7f5;
+}
+.mob-menu.is-open {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+.mob-button {
+  width: 40px;
+  height: 30px;
+  display: block;
+  border: none;
+  background-color: transparent;
+  margin-right: auto;
+}
+.mob-item {
+  color: var(--accent-color);
+  font-weight: 700;
+  font-size: 50px;
+  font-weight: 700;
+  line-height: 0.52;
+  letter-spacing: 0em;
+}
+
+.mob-list {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  row-gap: 35px;
+}
+.menu-close {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: transparent;
+  border: 1px solid var(--accent-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: auto;
+  margin-bottom: 16px;
+}
+
+.mob-close {
+  fill: var(--accent-color);
 }
 
 /* HEADER */
@@ -382,222 +454,3 @@ p {
 .soc-icons:focus {
   stroke: white;
 }
-/* .position {
-  margin-top: 32px;
-  margin-bottom: 32px;
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-end;
-}
-.ad-criteria {
-  padding-top: 32px;
-  padding-bottom: 46px;
-}
-.ad-criteria-title {
-  margin-bottom: 32px;
-  font-size: 40px;
-  font-weight: 700;
-  line-height: 1;
-  letter-spacing: 0em;
-}
-
-.ad-criteria-text {
-  font-size: 32px;
-  font-weight: 700;
-  line-height: 1;
-  letter-spacing: 0em;
-}
-
-.ad-criteria-list {
-  display: flex;
-  flex-wrap: wrap;
-  column-gap: 20px;
-  row-gap: 36px;
-}
-
-.ad-criteria-item {
-  flex-basis: calc((100% - 24px) / 2);
-}
-.ad-criteria-image {
-  margin-bottom: 28px;
-} */
-
-/* all ads */
-/* .all-ads {
-  padding-top: 32px;
-  padding-bottom: 48px;
-}
-.france-main-title {
-  font-size: 40px;
-  font-weight: 700;
-  line-height: 1;
-  letter-spacing: 0em;
-}
-.all-ads-button {
-  color: var(--accent-color);
-  border-bottom: 2px solid var(--accent-color);
-  border-top: transparent;
-  border-left: transparent;
-  border-right: transparent;
-}
-
-.all-ads-button:hover,
-.all-ads-button:focus {
-  color: white;
-}
-.country-title {
-  font-family: Play;
-  font-size: 32px;
-  font-weight: 700;
-  line-height: 1;
-  letter-spacing: 0em;
-  display: inline-block;
-}
-.country-title-button {
-  display: flex;
-  align-items: center;
-}
-
-.hotel-name,
-.hotel-quantity {
-  font-size: 16px;
-  font-weight: 700;
-  line-height: 1.2;
-  letter-spacing: 0em;
-}
-
-.ad-list {
-  display: flex;
-  column-gap: 20px;
-  row-gap: 32px;
-}
-.ad-item {
-  flex-basis: calc((100% - 40px) / 3);
-} */
-
-/*ANNOUCEMENTS */
-/* .announcements {
-  padding-top: 32px;
-  padding-bottom: 120px;
-}
-.announcements-title {
-  font-size: 40px;
-  font-weight: 700;
-  line-height: 1;
-  letter-spacing: 0em;
-}
-
-.hotel-location {
-  font-size: 16px;
-  font-weight: 700;
-  line-height: 1;
-  letter-spacing: 0em;
-  color: var(--second-text);
-}
-
-.hotel-rating {
-  font-size: 14px;
-  font-weight: 700;
-  line-height: 1;
-  letter-spacing: 0em;
-  color: var(--accent-color);
-}
-
-.announcements-list {
-  display: flex;
-  flex-wrap: wrap;
-  column-gap: 20px;
-  row-gap: 50px;
-}
-
-.announcements-item {
-  flex-basis: calc((100% - 40px) / 3);
-}
-.card-text {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 8px;
-} */
-/* FOOTER */
-/* 
-.footer {
-  padding-top: 32px;
-  padding-bottom: 93px;
-}
-.footer-list {
-  display: flex;
-  gap: 64px;
-  justify-content: flex-end;
-}
-
-.footer-social-media {
-  margin-top: 35px;
-  display: flex;
-  gap: 28px;
-  justify-content: flex-end;
-}
-.footer-item {
-  font-size: 20px;
-  font-weight: 700;
-  line-height: 1.3;
-  letter-spacing: 0em;
-  color: var(--accent-color);
-}
-
-.copyright {
-  font-size: 16px;
-  font-weight: 700;
-  line-height: 1.3;
-  letter-spacing: 0em;
-  color: var(--accent-color);
-} */
-
-/* SECOND PAGE */
-
-/* .economy-title {
-  margin-bottom: 32px;
-  font-size: 32px;
-  font-weight: 400;
-  line-height: 1;
-  letter-spacing: 0em;
-}
-
-.more-ads-button {
-  font-size: 20px;
-  font-weight: 700;
-  line-height: 1;
-  letter-spacing: 0em;
-  border: 2px solid #766f6f;
-  background-color: transparent;
-  color: #b0a2a2;
-}
-
-.more-ads-button:hover,
-.more-ads-button:focus {
-  background-color: b0a2a2;
-  color: white;
-}
-
-.economy-list {
-  display: flex;
-}
-.economy-item {
-  flex-basis: calc((100% - 40px) / 3);
-}
-.spec-offer-list {
-  display: flex;
-}
-
-.popular-list {
-  display: flex;
-}
-
-.header-icon {
-  fill: #266294;
-}
-
-.soc-icons {
-  stroke: var(--accent-color);
-  fill: transparent;
-} */

@@ -2,7 +2,9 @@
   .container {
     width: 834px;
   }
-
+  .mob-button {
+    display: none;
+  }
   .header > .container {
     max-width: 834px;
     width: 100%;
