@@ -27,7 +27,8 @@
             <use href="./symbol-defs.svg#icon-burger"></use>
           </svg>
         </button>
-        <svg class="" width="87" height="85">
+
+        <svg class="header-icon" width="73" height="62">
           <use href="./symbol-defs.svg#icon-Logo"></use>
         </svg>
         <ul class="header-list">
@@ -73,12 +74,96 @@
             >
           </li>
         </ul>
+        <button class="header-button btn" type="submit">registration</button>
+      </div>
+      <div class="mob-menu is-hidden" data-menu>
+        <div class="container">
+          <button type="button" class="menu-close" data-menu-close>
+            <svg class="mob-close" width="20" height="20">
+              <use href="./symbol-defs.svg#icon-close"></use>
+            </svg>
+          </button>
+          <ul class="mob-list">
+            <li class="mob-item">
+              <a class="mob-link" href="./index.html">main</a>
+            </li>
+            <li class="mob-item">
+              <a class="mob-link" href="./second.html">all adverts</a>
+            </li>
+            <li class="mob-item">
+              <a class="mob-link" href="">favourites </a
+              ><svg class="header-icon" width="35" height="35">
+                <use href="symbol-defs.svg#icon-vector"></use>
+              </svg>
+            </li>
+            <li class="mob-item">
+              <a class="mob-link" href="">user account </a>
+              <svg class="header-icon" width="35" height="35">
+                <use href="symbol-defs.svg#icon-user"></use>
+              </svg>
+            </li>
+          </ul>
+        </div>
       </div>
     </header>
     <main>
       <section class="announcements">
         <div class="container">
-          <h2 class="main-title">All announcements</h2>
+          <h2 class="main-title box-title">All announcements</h2>
+          <div class="modal-flex">
+            <div class="modal-checkbox">
+              <input
+                type="checkbox"
+                name="announcements"
+                id="announcements"
+                value="true"
+                class="input-check visually-hidden"
+              />
+              <label for="announcements" class="check-text"
+                ><span>
+                  <svg class="check-icon" width="18" height="18">
+                    <use href="./symbol-defs.svg#icon-check"></use>
+                  </svg>
+                </span>
+                All announcements
+              </label>
+            </div>
+            <div class="modal-checkbox">
+              <input
+                type="checkbox"
+                name="suggest"
+                id="suggest"
+                value="true"
+                class="input-check visually-hidden"
+              />
+              <label for="announcements" class="check-text"
+                ><span>
+                  <svg class="check-icon" width="18" height="18">
+                    <use href="./symbol-defs.svg#icon-check"></use>
+                  </svg>
+                </span>
+                I suggest
+              </label>
+            </div>
+            <div class="modal-checkbox">
+              <input
+                type="checkbox"
+                name="looking"
+                id="looking"
+                value="true"
+                class="input-check visually-hidden"
+              />
+              <label for="announcements" class="check-text"
+                ><span>
+                  <svg class="check-icon" width="18" height="18">
+                    <use href="./symbol-defs.svg#icon-check"></use>
+                  </svg>
+                </span>
+                I'm looking for
+              </label>
+            </div>
+            <button type="button" class="btn filter">Filter</button>
+          </div>
         </div>
       </section>
       <section class="economy">

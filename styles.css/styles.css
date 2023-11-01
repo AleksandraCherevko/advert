@@ -359,7 +359,7 @@ p {
 /* announcements */
 
 .announcements > .container {
-  max-width: 380px;
+  max-width: 350px;
   width: 100%;
 }
 
@@ -453,4 +453,72 @@ p {
 .soc-icons:hover,
 .soc-icons:focus {
   stroke: white;
+}
+
+/* checkbox */
+.modal-flex {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  row-gap: 16px;
+}
+.modal-checkbox {
+}
+.check-text span {
+  margin-right: 7px;
+  width: 16px;
+  height: 16px;
+  border-radius: 3px;
+  border: 2px solid black;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  fill: transparent;
+}
+.check-icon {
+  stroke: #266294;
+}
+.check-text {
+  font-family: Play;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1;
+  letter-spacing: 0em;
+  text-align: center;
+  display: flex;
+}
+
+.input-check:checked + .check-text span {
+  background-color: #404bbf;
+  border: 1.25px solid #404bbf;
+  border-radius: 2px;
+  fill: white;
+}
+
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+
+.filter {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1;
+  letter-spacing: 0em;
+  text-align: center;
+  color: var(--accent-color);
+}
+
+.filter:hover,
+.filter:focus {
+  color: white;
 }

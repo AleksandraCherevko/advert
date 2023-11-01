@@ -183,4 +183,28 @@
     font-weight: 700;
     line-height: 1.3;
   }
+  .announcements > .container {
+    max-width: 834px;
+    width: 100%;
+  }
+
+  .announcements {
+    padding-top: 48px;
+    padding-bottom: 32px;
+  }
+  .modal-flex {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    gap: 40px;
+    align-items: center;
+  }
+
+  .filter {
+    margin-left: auto;
+  }
+
+  .box-title {
+    margin-bottom: 20px;
+  }
 }
