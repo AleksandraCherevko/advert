@@ -27,16 +27,21 @@
             <use href="./symbol-defs.svg#icon-burger"></use>
           </svg>
         </button>
-
-        <svg class="header-icon" width="73" height="62">
-          <use href="./symbol-defs.svg#icon-Logo"></use>
-        </svg>
+        <a
+          href="./index.html"
+          target="_self"
+          rel="noopener noreferrer nofollow"
+        >
+          <svg class="header-icon" width="73" height="62">
+            <use href="./symbol-defs.svg#icon-Logo"></use>
+          </svg>
+        </a>
         <ul class="header-list">
           <li class="header-item">
             <a
               class="header-link"
               href="./index.html"
-              target="_blank"
+              target="_self"
               rel="noopener noreferrer nofollow"
               >Main</a
             >
@@ -45,20 +50,20 @@
             <a
               class="header-link"
               href="./second.html"
-              target="_blank"
+              target="_self"
               rel="noopener noreferrer nofollow"
               >All adverts</a
             >
           </li>
           <li class="header-item">
-            <a href="">
+            <a href="" target="_self" rel="noopener noreferrer nofollow">
               <svg class="header-icon" width="24" height="24">
                 <use href="symbol-defs.svg#icon-vector"></use>
               </svg>
             </a>
           </li>
           <li class="header-item">
-            <a href="">
+            <a href="" target="_self" rel="noopener noreferrer nofollow">
               <svg class="header-icon" width="24" height="24">
                 <use href="symbol-defs.svg#icon-user"></use>
               </svg>
@@ -68,7 +73,7 @@
             <a
               class="header-link"
               href=""
-              target="_blank"
+              target="_self"
               rel="noopener noreferrer nofollow"
               >User account</a
             >
@@ -85,19 +90,37 @@
           </button>
           <ul class="mob-list">
             <li class="mob-item">
-              <a class="mob-link" href="./index.html">main</a>
+              <a
+                class="mob-link"
+                href="./index.html"
+                target="_self"
+                rel="noopener noreferrer nofollow"
+                >main</a
+              >
             </li>
             <li class="mob-item">
-              <a class="mob-link" href="./second.html">all adverts</a>
+              <a
+                class="mob-link"
+                href="./second.html"
+                target="_self"
+                rel="noopener noreferrer nofollow"
+              >
+                all adverts</a
+              >
             </li>
             <li class="mob-item">
-              <a class="mob-link" href="">favourites </a
+              <a
+                class="mob-link"
+                href=""
+                target="_self"
+                rel="noopener noreferrer nofollow"
+                >favourites </a
               ><svg class="header-icon" width="35" height="35">
                 <use href="symbol-defs.svg#icon-vector"></use>
               </svg>
             </li>
             <li class="mob-item">
-              <a class="mob-link" href="">user account </a>
+              <a href="" target="_self">user account</a>
               <svg class="header-icon" width="35" height="35">
                 <use href="symbol-defs.svg#icon-user"></use>
               </svg>
@@ -786,7 +809,7 @@
               </div>
             </li>
           </ul>
-          <button class="all-ads-button btn">Show more ads</button>
+          <button class="second-ads-button btn">Show more ads</button>
         </div>
       </section>
     </main>
@@ -817,7 +840,7 @@
             <a
               class="footer-soc-media-link"
               href="https://cs-cz.facebook.com/"
-              target="_blank"
+              target="_self"
               rel="noopener noreferrer nofollow"
               ><svg class="soc-icons" width="20" height="20">
                 <use href="symbol-defs.svg#icon-facebook"></use>
@@ -828,7 +851,7 @@
             <a
               class="footer-soc-media-link"
               href="https://www.youtube.com/"
-              target="_blank"
+              target="_self"
               rel="noopener noreferrer nofollow"
               ><svg class="soc-icons" width="20" height="20">
                 <use href="symbol-defs.svg#icon-youtube"></use>
@@ -839,7 +862,7 @@
             <a
               class="footer-soc-media-link"
               href="https://www.instagram.com/"
-              target="_blank"
+              target="_self"
               rel="noopener noreferrer nofollow"
               ><svg class="soc-icons" width="20" height="20">
                 <use href="symbol-defs.svg#icon-instagram"></use>
@@ -850,7 +873,7 @@
             <a
               class="footer-soc-media-link"
               href="https://twitter.com/?lang=uk"
-              target="_blank"
+              target="_self"
               rel="noopener noreferrer nofollow"
               ><svg class="soc-icons" width="20" height="20">
                 <use href="symbol-defs.svg#icon-twitter"></use>
@@ -861,6 +884,93 @@
         <p class="copyright">&copy; All rights reserved</p>
       </div>
     </footer>
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button class="backdrop-button" type="button" data-modal-close>
+          <svg class="backdrop-button-icon" width="8" height="8">
+            <use href="./images/icons.svg#icon-vector"></use>
+          </svg>
+        </button>
+        <p class="modal-title">Leave your contacts and we will call you back</p>
+        <form class="modal-form">
+          <div class="modal-field">
+            <label for="user-name" class="input-text">Name</label>
+            <div class="input-wrap">
+              <input
+                type="text"
+                class="modal-input"
+                name="user-name"
+                id="user-name"
+              />
+              <svg class="input-icon" width="18" height="18">
+                <use href="./images/icons.svg#icon-person-modal"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="modal-field">
+            <label for="user-phone" class="input-text">Phone</label>
+            <div class="input-wrap">
+              <input
+                type="tel"
+                class="modal-input"
+                name="user-phone"
+                id="user-phone"
+              />
+              <svg class="input-icon" width="18" height="24">
+                <use href="./images/icons.svg#icon-phone-modal"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="modal-field">
+            <label for="user-email" class="input-text">Email</label>
+            <div class="input-wrap">
+              <input
+                type="email"
+                class="modal-input"
+                name="user-email"
+                id="modal-email"
+              />
+              <svg class="input-icon" width="18" height="24">
+                <use href="./images/icons.svg#icon-email-modal"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="modal-field">
+            <label for="user-text" class="input-text">Comment</label>
+            <div class="input-wrap">
+              <textarea
+                name="user-text"
+                id="user-text"
+                class="modal-coment"
+                placeholder="Text input"
+              ></textarea>
+            </div>
+          </div>
+          <div class="modal-checkbox">
+            <input
+              type="checkbox"
+              name="privacy"
+              id="privacy"
+              value="true"
+              class="input-check visually-hidden"
+            />
+            <label for="privacy" class="check-text"
+              ><span>
+                <svg class="check-icon" width="10" height="8">
+                  <use href="./images/icons.svg#icon-agree-icon"></use>
+                </svg>
+              </span>
+              I accept the terms and conditions of the
+              <a class="privacy-link" href="">Privacy Policy</a></label
+            >
+          </div>
+          <div class="check-box-button">
+            <button class="check-button" type="submit">Send</button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <script src="/js/backdrop.js"></script>
     <script src="/js/modal.js"></script>
   </body>
 </html>

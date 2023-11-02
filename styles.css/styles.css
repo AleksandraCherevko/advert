@@ -41,7 +41,7 @@ img {
   width: 390px;
   margin: 0 auto;
   padding: 0 15px;
-  outline: 2px solid tomato;
+  /* outline: 2px solid tomato; */
 }
 
 h1,

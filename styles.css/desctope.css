@@ -7,7 +7,7 @@
   }
 
   .header > .container {
-    max-width: 1400px;
+    max-width: 1280px;
     width: 100%;
   }
 
@@ -81,6 +81,11 @@
     flex-basis: calc((100% - 20px) / 2);
   }
 
+  .economy > .container {
+    max-width: 1280px;
+    width: 100%;
+  }
+
   /* all ads */
   .all-ads > .container {
     max-width: 1280px;
@@ -135,7 +140,7 @@
 
   .announcements {
     padding-top: 32px;
-    padding-bottom: 120px;
+    padding-bottom: 48px;
   }
   .announcements-list {
     display: flex;
@@ -147,9 +152,40 @@
     flex-basis: calc((100% - 40px) / 3);
   }
 
+  .spec-offer > .container {
+    max-width: 1280px;
+    width: 100%;
+  }
+
+  .spec-offer {
+    padding-top: 48px;
+  }
+  .popular > .container {
+    max-width: 1280px;
+    width: 100%;
+  }
+  .popular {
+    padding-top: 48px;
+    padding-bottom: 48px;
+  }
+
+  .second-ads-button {
+    margin-top: 48px;
+
+    color: #b0a2a2;
+    border: 3px solid #b0a2a2;
+    display: block;
+  }
+
+  .second-ads-button:hover,
+  .second-ads-button:focus {
+    color: var(--accent-color);
+    border: 3px solid var(--accent-color);
+    background-color: transparent;
+  }
   /* footer */
   .footer > .container {
-    max-width: 1300px;
+    max-width: 1280px;
     width: 100%;
   }
 
@@ -187,5 +223,30 @@
   .footer-icon {
     width: 87px;
     height: 96px;
+  }
+
+  .announcements > .container {
+    max-width: 1280px;
+    width: 100%;
+  }
+
+  .announcements {
+    padding-top: 38px;
+    padding-bottom: 32px;
+  }
+  .modal-flex {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    gap: 40px;
+    align-items: center;
+  }
+
+  .filter {
+    margin-left: auto;
+  }
+
+  .box-title {
+    margin-bottom: 20px;
   }
 }
