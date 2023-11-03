@@ -80,7 +80,7 @@
             >
           </li>
         </ul>
-        <button class="header-button btn" type="submit" data-modal-open>
+        <button data-modal-open class="header-button btn" type="submit">
           registration
         </button>
       </div>
@@ -899,6 +899,84 @@
         <p class="copyright">&copy; All rights reserved</p>
       </div>
     </footer>
+    <!-- backdrop -->
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button class="backdrop-button" type="button" data-modal-close>
+          <svg class="backdrop-button-icon" width="8" height="8">
+            <use href="./images/icons.svg#icon-vector"></use>
+          </svg>
+        </button>
+        <p class="modal-title">Registration</p>
+        <p class="modal-text">
+          Please, registrate yourself for reservation apartments
+        </p>
+        <form class="modal-form">
+          <div class="modal-field">
+            <label for="user-name" class="input-text">Name*</label>
+            <div class="input-wrap">
+              <input
+                type="text"
+                class="modal-input"
+                name="user-name"
+                id="user-name"
+              />
+            </div>
+          </div>
+          <div class="modal-field">
+            <label for="user-name" class="input-text">Second name*</label>
+            <div class="input-wrap">
+              <input
+                type="text"
+                class="modal-input"
+                name="user-name"
+                id="user-name"
+              />
+            </div>
+          </div>
+          <div class="modal-field">
+            <label for="user-email" class="input-text">Email*</label>
+            <div class="input-wrap">
+              <input
+                type="email"
+                class="modal-input"
+                name="user-email"
+                id="modal-email"
+              />
+            </div>
+          </div>
+          <div class="modal-field">
+            <label for="user-phone" class="input-text">Phone number*</label>
+            <div class="input-wrap">
+              <input
+                type="tel"
+                class="modal-input"
+                name="user-phone"
+                id="user-phone"
+              />
+            </div>
+          </div>
+          <div class="modal-field">
+            <label for="user-age" class="input-text">Your age*</label>
+            <div class="input-wrap">
+              <input
+                type="tel"
+                class="modal-input"
+                name="user-phone"
+                id="user-phone"
+              />
+            </div>
+          </div>
+          <p class="">Or use</p>
+          <ul></ul>
+          <li><a href="">Google</a></li>
+          <li><a href="">facebook</a></li>
+          <li><a href="">Tw</a></li>
+          <p>Already have an account?</p>
+          <a href="">Log in</a>
+        </form>
+      </div>
+    </div>
 
     <script src="/js/modal.js"></script>
     <script src="/js/backdrop.js"></script>
